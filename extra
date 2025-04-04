@@ -1,0 +1,334 @@
+body {
+	font-family: "arial";
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 0px;
+}
+
+#sidebarMenu {
+    height: 61%;
+    position:fixed;
+    left:0;
+    top: 0;
+    width: 250px;
+    margin-top: 0px;
+    background-color: rgb(48, 76, 88);
+    transform: translate(-251px);
+    transition: transform 300ms ease-in-out;
+    z-index: 20;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 35px;
+
+}
+
+.menu li {
+    color: rgb(198, 225, 241);
+}
+
+.menu li a {
+    color: rgb(232, 246, 251);
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.sidebarIcon {
+    width: 22px;
+    height: 22px;
+    position:fixed;
+    z-index: 20;
+    top: 20px;
+    left: 20px;
+   /* background-color: rgb(208, 236, 247); */
+    cursor: pointer;
+    mix-blend-mode: difference;
+    z-index: 21;
+}
+
+#Open:checked ~ #sidebarMenu {
+    transform: translate(0px);
+}
+
+.wrapper {
+    height: 3px;
+    background-color: aliceblue;
+    transition: all 0.5s;
+}
+
+.wrapper.second, .wrapper.third {
+    margin-top: 3px;
+}
+
+#Open:checked ~ .sidebarIcon > .wrapper.second {
+    opacity: 0;
+}
+
+#Open:checked ~ .sidebarIcon > .wrapper.first {
+    transform: rotate(315deg);
+    margin-top: 8px;
+}
+
+#Open:checked ~ .sidebarIcon > .wrapper.third {
+    transform: rotate(-315deg);
+    margin-top: -9px;
+}
+
+.abc {
+    height: auto;
+}
+
+.container {
+    /*The height of container was the issue*/
+    margin: 0;
+    padding: 0;
+    position: -webkit-sticky;
+    background-image: url('../images/im1.jpeg');
+    background-size: cover; /* Ensure the background image covers the entire container */
+    background-position: center; /* Center the background image */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+    height: 100vh; /* Ensure Container 1 takes up the full viewport height */
+    padding-top: 60px; /* Adjust padding-top to match the height of the navigation bar */
+}
+
+.container .anything {
+    font-size: 80px; /* Adjust font size as needed */
+    font-weight: bold;
+    font-style: normal;
+    color: rgb(191, 223, 240);
+    text-transform: uppercase;
+    transform: translate(0, -500);
+    margin: 0; /* Remove any default margin */
+    padding-bottom: 4%; /* Add padding to separate from edges */
+}
+
+.container .subtext {
+    font-size: 35px; /* Adjust font size as needed */
+    font-style: normal;
+    color: rgb(191, 223, 240);
+    margin: 0; /* Remove any default margin */
+    padding-bottom: 10%; /* Add padding to separate from edges */
+}
+
+.container h1 a {
+    text-align:center;
+    text-decoration: none;
+    top: 85%;
+    left: 50%;
+    color: rgb(234, 248, 249);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 35px;
+    background-color: rgb(27, 50, 104);
+    border-radius: 15px;
+    padding: 10px 35px;
+}
+
+.container h1 a:hover {
+    background-color: transparent;
+    border: solid;
+    border-color: rgba(255, 255, 255, 0.911);
+}
+
+.container2 {
+    position: relative;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    width: 100%;
+    display: block;
+    height: 1000px;
+    background-color: rgb(0, 22, 53);
+    transform: translateY(-60px);
+    z-index: 19;
+}
+
+.container2 h1{
+    font-size: 80px;
+    position: fixed;
+    top: -2%;
+    left: 32%;
+    color: rgb(210, 227, 249);
+}
+
+.container2 h2{
+    font-size: 25px;
+    position: fixed;
+    color: white;
+    top: 13%;
+    left: 34%
+}
+
+.images-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container {
+    margin-top: 250px; /* Adjust margin as needed */
+    margin-left: 50px;
+    margin-right: 50px;
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+    opacity: 1;
+    transition: transform 0.5s ease-in-out;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0); /* Set opacity to 1 to completely hide the image */
+    opacity: 0; /* Start with opacity 0 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    transition: opacity 0.3s ease-in-out; /* Adjust transition duration */
+}
+
+.image-container:hover .overlay {
+    opacity: 0.7; /* Set opacity to 1 on hover */
+}
+
+.overlay .text {
+    color: rgb(255, 255, 255); /* Adjust text color as needed */
+    font-size: 18px; /* Adjust font size as needed */
+    text-align: center; /* Center-align text */
+    z-index: 1; /* Ensure text is above the image */
+    padding: 25px;
+    line-height: 1.5;
+}
+
+.abc > .container2 h1, .container2 h2,
+.container2 img {
+    animation: fade-in-container2 105s linear forwards;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 400px;
+}
+
+@keyframes fade-in-container2 {
+    from {scale: 0.8; opacity: 0;}
+    to {scale: 1; opacity: 1;}
+}
+
+.h2 {
+    opacity: 0;
+    scale: 0.8;
+}
+
+.abc {
+    height: auto;
+}
+
+#goals:hover {
+    width: 500px;
+    height: auto;
+    transition-duration: 0.5s;
+  }
+
+#goals:not(hover) {
+    width: 473px;
+    height: auto;
+    transition-duration: 0.5s;
+  }
+
+#stem:hover {
+    width: 485px;
+    height: auto;
+    transition-duration: 0.5s;
+  }
+
+  #stem:not(hover) {
+    width: 450px;
+    height: auto;
+    transition-duration: 0.5s;
+  }
+
+
+
+
+
+
+
+  <!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title> STEM Programs </title>
+		<link href="css/styles.css" type="text/css" rel="stylesheet" />
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    </head>
+
+<body>
+    <div class="header"></div>
+    <input type="checkbox" name="" id="Open" style="display:none" />
+        <label for="Open" class="sidebarIcon">
+            <div class="wrapper first"></div>
+            <div class="wrapper second"></div>
+            <div class="wrapper third"></div>
+        </label> 
+    <div id="sidebarMenu">
+        <ul class="menu">
+            <li><a href="Main.html">Home</a></li>
+            <li><a href="Projectplans.html">Project Plans</a></li>
+            <li><a href="Communityoutreach.html">Community Outreach</a></li>
+            <li><a href="Schoolbasedoutreach.html">School-Based Outreach</a></li>
+            <li><a href="FIRSTrobotics.html">FIRST Robotics</a></li>
+            <li><a href="Aboutus.html">About Us</a></li>
+        </ul>
+     </div>
+    <div class="abc">
+        <div class="container">
+            <h1 class="anything">Personalized <br/> STEM Outreach</h1>	
+		    <h2 class="subtext"> At Avant-Garde, we offer personalized STEM education experiences based on the individual needs and goals of your child. Our services cater to children ages K-5 and include a wide range of fun group classes and experiments.</h2>
+            <h1 class="hover"><a href="Projectplans.html">Learn More</a></h1>
+        </div>
+
+        <div class="container2">
+            <h1>Team Purpose</h1>
+            <h2>Hover over images for more information</h2>
+            <div class="images-wrapper">
+                <div class="image-container">
+                    <img id="stem" class="STEM" src="images/STEM.webp" alt="STEM">
+                    <div class="overlay">
+                        <div class="text">Our FIRST Tech Challenge (FTC) robotics team has been deeply involved in promoting STEM education within our community. Through various initiatives, we've made significant contributions to inspiring and educating young minds. Our team authored a children's book that introduces STEM concepts in an engaging and accessible way. Additionally, we've established STEM programs in multiple libraries and elementary schools, providing hands-on learning opportunities for children of all ages. Furthermore, we regularly conduct presentations and robot demonstrations in our local community, showcasing the excitement and possibilities of robotics and STEM fields. These efforts are aimed at instilling a passion for learning and innovation in STEM subjects among the next generation.</div>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img id="goals" class="GOALS" src="images/goals.png" alt="GOALS">
+                    <div class="overlay">
+                        <div class="text">Our overarching goals encompass a multifaceted approach to advancing STEM education and robotics within our community. We are dedicated to fostering a deep-seated enthusiasm for science, technology, engineering, and mathematics among young learners. Through initiatives such as writing a comprehensive STEM book tailored for young children, establishing STEM programs in various libraries and elementary schools, and conducting engaging presentations and demonstrations on robotics and STEM topics, we aim to instill a lifelong passion for learning and exploration. Additionally, by showcasing our competition robot and engaging in hands-on activities, we endeavor to inspire students to pursue careers in STEM fields and become the innovators and problem-solvers of tomorrow.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>

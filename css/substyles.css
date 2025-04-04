@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #eaf7f1; /* Soft pastel green */
+    color: #333333; /* Dark gray for readability */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.logo {
+    display: block;
+    margin: 0;
+    padding: 0;
+    max-width: 50px;
+    height: auto;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #d4efdf; /* Light pastel green */
+    padding: 20px 40px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2f4f4f; /* Default color of the navbar links */
+    font-weight: 500;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #358da1; /* Set the hover color to your desired color */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none; /* Hide by default */
+    position: absolute;
+    background-color: #b9ddcd;
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+    margin: 0; /* Remove any margin */
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: #2f4f4f;
+    font-size: 16px;
+}
+
+.dropdown-menu a:hover {
+    color: #3b9a6a; /* Soft green for hover */
+}
+
+/* Main Header */
+.main-header {
+    text-align: center;
+    padding: 50px 20px; /* Adjust padding for clarity */
+}
+
+.main-header h1 {
+    font-size: 48px;
+    color: #457c7e;
+    margin-bottom: 10px;
+}
+
+.main-header p {
+    font-size: 25px;
+    color: #509f97;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+    padding: 0 20px;
+}
+
+/* Submit Section */
+.submit-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.google-form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.google-form iframe {
+    width: 100%;
+    height: 880px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Info Section */
+.contact-info {
+    text-align: center; /* Center the text */
+    margin-top: 20px;    /* Adds space above the contact info */
+    font-size: 16px;     /* Optional: Adjust the size of the text */
+    color: #2f4f4f;      /* Dark color for text */
+    width: 100%;         /* Ensure it spans the width */
+    padding: 10px 0;     /* Optional: Add padding to make it more balanced */
+}
+
+.contact-info a {
+    color: #358da1;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #d4efdf; /* Light pastel green */
+    padding: 20px 40px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.footer p {
+    margin: 0;
+    color: #2f4f4f; /* Dark gray text for footer */
+    font-size: 14px;
+}

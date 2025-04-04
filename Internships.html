@@ -1,0 +1,1859 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathway Interns</title>   
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/istyles.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+
+    <!-- Navbar -->
+<nav class="navbar">
+    <a href="Home.html">
+        <img src="images/logo.png" alt="Logo" class="logo">
+      </a>
+    <ul class="nav-links">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Resources.html">Resources</a></li>
+        
+        <!-- Dropdown Menu for Social Media -->
+        <li class="dropdown">
+            <a>Social Media</a>
+            <ul class="dropdown-menu">
+                <li><a href="https://www.tiktok.com/@pathway.interns?_t=ZP-8vEqYWpSXmh&_r=1">TikTok</a></li>
+                <li><a href="https://www.instagram.com/pathway.interns?igsh=MXkwdGhhNDRzbHVoZA%3D%3D&utm_source=qr">Instagram</a></li>
+                <li><a href="https://www.youtube.com/@PathwayInterns">Youtube</a></li>
+            </ul>
+        </li>
+        
+        <li><a href="Submit.html">Submit a Passion Project</a></li>
+        <li><a href="Aboutus.html">About Us</a></li>
+    </ul>
+</nav>
+
+    <!-- Main Header with Introduction to Opportunities -->
+<header class="main-header">
+    <h1>Discover Your Dream Opportunity</h1>
+    <p>At Pathway Interns, we believe in providing you with the best opportunities to help you grow and succeed in your career. Whether you’re looking for internships, volunteer work, or educational programs, we’ve got a range of options to suit your unique interests and aspirations.
+
+        Our platform is designed to guide you in finding the perfect opportunity based on your field, interests, and goals. We make it easy to search through various categories like Computer Science, Engineering, Research, Medical, Business, and more—so you can focus on what truly excites you.</p>
+</header>
+
+<div class="flashcard-container">
+    <div class="flashcard">
+        <h3>Start Your Journey Today</h3>
+         <div class="flashcard-content">
+            <p>There’s no better time to take that next step toward your dream career or meaningful experience. Whether you’re looking to build your resume, make a difference, or explore your passions, Pathway Interns has something for you.</p>
+        </div>
+        </div>
+        <div class="flashcard">
+        <h3>Browse Opportunities by Category</h3>
+        <div class="flashcard-content">
+            <p>Explore a wide variety of options across different fields, such as internships, volunteer programs, and hands-on projects. We’ve made it simple to navigate through the categories to find the perfect match for you.</p>
+        </div>
+    </div>
+    <div class="flashcard">
+        <h3>Narrow Down Your Search</h3>
+        <div class="flashcard-content">
+            <p>Scroll down and use the navigation bar and scroll through the different career categories to discover opportunities that match your skills, location, and timeline. With these filters, finding exactly what you're looking for is quick and easy!</p>
+        </div>
+    </div>
+    <div class="flashcard">
+        <h3>Apply Directly</h3>
+        <div class="flashcard-content">
+            <p>Once you’ve found an opportunity that sparks your interest, simply click on the link and follow the instructions provided to apply. No complicated searches or excessive steps—just straightforward applications to help you move forward quickly.</p>
+        </div>
+    </div>
+    <div class="flashcard">
+        <h3>Stay Engaged</h3>
+        <div class="flashcard-content">
+            <p>As you apply and explore, keep an eye on our platform for updates. New opportunities are constantly being added, and our platform keeps you connected to the latest and best internships, programs, and volunteering roles.</p>
+        </div>
+    </div>
+    <!-- Navigation buttons -->
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+</div>
+
+<script>
+    let currentFlashcard = 0;
+    const flashcards = document.querySelectorAll('.flashcard');
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+  
+    function showFlashcard(index) {
+      // Hide all flashcards
+      flashcards.forEach(card => card.style.display = 'none');
+      // Show the current flashcard
+      flashcards[index].style.display = 'block';
+    }
+  
+    // Show the first flashcard initially
+    showFlashcard(currentFlashcard);
+  
+    prevButton.addEventListener('click', function() {
+      if (currentFlashcard > 0) {
+        currentFlashcard--;
+        showFlashcard(currentFlashcard);
+      }
+    });
+  
+    nextButton.addEventListener('click', function() {
+      if (currentFlashcard < flashcards.length - 1) {
+        currentFlashcard++;
+        showFlashcard(currentFlashcard);
+      }
+    });
+  </script>  
+
+<!-- Section Navigation -->
+<div class="section-nav">
+    <ul>
+        <li><a href="#engineering">Engineering & Computer Science</a></li>
+        <li><a href="#medical">Medical & Healthcare</a></li>
+        <li><a href="#business">Business & Finance</a></li>
+        <li><a href="#research">Research & Innovation</a></li>
+        <li><a href="#arts">Creative Arts & Media</a></li>
+    </ul>
+</div>
+
+<section class="section" id="engineering">
+    <div class="container">
+        <div class="content">
+            <h2>Engineering & Computer Science</h2>
+            <p>Explore internships in mechanical, electrical, aerospace, and software engineering. Whether you're into AI, coding, or designing machines, this is your space.</p>
+            <section id="engineering" class="category-section">
+                <section id="engineering" class="category-section">
+                    <h2>Internship Opportunities</h2>
+                    <div class="internship">
+                        <h3><a href="https://innovatealabama.org/programs/quanthub-alabama-data-scholars/" style="color: #68b0a1;">1. QuantHub Alabama Data Scholars Internship Program</a></h3>
+                        <p>An 8-week paid summer internship placing high school juniors and seniors with Alabama-based companies that utilize data creatively. Interns gain hands-on experience in AI and data science, coupled with professional development. <br><strong>Eligibility:</strong> High school juniors and seniors. <br><strong>Duration:</strong> 8-week summer internship.</p>
+                    </div>
+                    
+                    <div class="internship">
+                        <h3><a href="https://www.nasa.gov/learning-resources/internship-programs/" style="color: #68b0a1;">2. NASA Internship Programs</a></h3>
+                        <p>NASA’s Office of STEM Engagement offers paid internships for high school students, allowing them to contribute to NASA's mission alongside scientists and engineers. These internships provide real-world experience in science, technology, engineering, and space exploration. <br><strong>Eligibility:</strong> High school students. <br><strong>Duration:</strong> Varies (summer internships).</p>
+                    </div>
+                    
+                    <div class="internship">
+                        <h3><a href="https://ctf.asu.edu/education/internship/" style="color: #68b0a1;">3. Cybersecurity and Trusted Foundations (CTF) Internship at Arizona State University (ASU)</a></h3>
+                        <p>This hybrid internship combines in-person sessions at ASU's Tempe campus with remote work. Interns engage in cybersecurity research projects, dedicating 10-15 hours per week, and receive a stipend upon completion. <br><strong>Eligibility:</strong> High school students. <br><strong>Duration:</strong> Part-time (10-15 hours per week, summer internship).</p>
+                    </div>
+                    
+                    <div class="internship">
+                        <h3><a href="https://www.anc.edu/steeltechacademy" style="color: #68b0a1;">4. Steel Tech Academy Internship Program</a></h3>
+                        <p>The Steel Tech Academy is a summer program for high school students interested in pursuing careers in welding, fabrication, and advanced manufacturing. Students gain hands-on experience with welding techniques and fabrication processes, which can lead to valuable certifications and skills in technical fields. <br><strong>Eligibility:</strong> High school students. <br><strong>Duration:</strong> Summer program.</p>
+                    </div>
+                    
+                    <div class="internship">
+                        <h3><a href="https://www.colorado.edu/project/bbb/teen-internship-program" style="color: #68b0a1;">5. University of Colorado Boulder Engineering High School Internship Program</a></h3>
+                        <p>This program offers high school students the chance to work in engineering labs, gaining hands-on experience in fields like aerospace, computer science, and mechanical engineering under the guidance of university researchers. <br><strong>Eligibility:</strong> High school students (grades 10-12). <br><strong>Duration:</strong> Summer internship.</p>
+                    </div>
+                    
+                    <div class="internship">
+                        <h3><a href="https://www.lockheedmartin.com/en-us/careers/candidates/students-early-careers/high-school.html" style="color: #68b0a1;">6. Lockheed Martin Space Systems High School Internship</a></h3>
+                        <p>Lockheed Martin offers internships for high school students interested in aerospace engineering, including fields like satellite engineering, propulsion, and robotics. Interns work alongside engineers to gain real-world experience in cutting-edge technologies. <br><strong>Eligibility:</strong> High school students (ages 16+). <br><strong>Duration:</strong> Summer (some opportunities may be year-round).</p>
+                    </div>
+                    
+                    <div class="internship">
+                        <h3><a href="https://www.sciencegurus.org/internshipAbout.htm" style="color: #68b0a1;">7. Science Gurus Internship Program</a></h3>
+                        <p>The Science Gurus Internship Program offers high school students the chance to work with professionals in various scientific fields, including engineering, computer science, and technology. Interns are involved in real-world projects, conducting research, and assisting with data analysis and engineering-related tasks, gaining valuable hands-on experience. <br><strong>Eligibility:</strong> High school students, ages 16+. <br><strong>Duration:</strong> Summer internship program.</p>
+                    </div>
+                    
+                    <div class="internship">
+                        <h3><a href="https://poweringcareers.com/student-goal-setting/internship/" style="color: #68b0a1;">8. Powering Careers Internship Program</a></h3>
+                        <p>The Powering Careers Internship Program provides high school students with the opportunity to gain hands-on experience in the energy sector, specifically in electrical engineering, renewable energy, and energy management. The program aims to help students develop professional skills while learning about the power industry. <br><strong>Eligibility:</strong> High school students (ages 16+). <br><strong>Duration:</strong> Summer internship program.</p>
+                    </div>
+                    
+                    <div class="internship">
+                        <h3><a href="https://www.idahopower.com/about-us/careers/engineering-internships/" style="color: #68b0a1;">9. Idaho Power Engineering Internship</a></h3>
+                        <p>High school students can intern with Idaho Power to gain experience in electrical engineering, working on projects related to power systems and renewable energy. <br><strong>Eligibility:</strong> High school students. <br><strong>Duration:</strong> Summer internship.</p>
+                    </div>
+                    
+                    <div class="internship">
+                        <h3><a href="https://inl.gov/inl-initiatives/education/high-school-internships/" style="color: #68b0a1;">10. Idaho National Laboratory High School Internship Program</a></h3>
+                        <p>This internship program offers high school students the opportunity to work at Idaho National Laboratory, one of the nation’s premier research institutions. Interns gain hands-on experience in nuclear, chemical, and mechanical engineering fields, assisting in research and development projects. <br><strong>Eligibility:</strong> High school students (ages 16+). <br><strong>Duration:</strong> Summer internship.</p>
+                    </div>
+                    
+                    <div class="internship">
+                        <h3><a href="https://www.caterpillar.com/en/careers/career-areas/college/unitedstates/student-trainee-program.html" style="color: #68b0a1;">11. Caterpillar Student Trainee Program</a></h3>
+                        <p>High school students intern in various engineering fields, including mechanical and electrical engineering, working on projects related to heavy equipment design and manufacturing. <br><strong>Eligibility:</strong> High school students. <br><strong>Duration:</strong> Summer internship.</p>
+                    </div>
+                    
+                    <div class="internship">
+                        <h3><a href="https://careers.lilly.com/us/en/stem" style="color: #68b0a1;">12. Eli Lilly & Co. STEM Internship Program</a></h3>
+                        <p>High school students interested in pharmaceutical sciences and technology can join this internship to work on projects related to research and development in the healthcare and medical engineering fields. <br><strong>Eligibility:</strong> High school students. <br><strong>Duration:</strong> Summer internship.</p>
+                    </div>
+                    
+                    <div class="internship">
+                        <h3><a href="https://www.calacademy.org/careers-in-science-cis-intern-program" style="color: #68b0a1;">13. California Academy of Sciences - Careers in Science (CiS) Intern Program</a></h3>
+                        <p>The Careers in Science (CiS) Intern Program at the California Academy of Sciences is a multi-year, paid internship for high school students from underrepresented backgrounds in the San Francisco Bay Area. The program provides hands-on experience in science, technology, and conservation through mentorship, research projects, and professional development opportunities. <br><strong>Eligibility:</strong> High School Students (9-12). <br><strong>Duration:</strong> Multi-year paid internship program.</p>
+                    </div>
+                    
+                    <div class="internship">
+                        <h3><a href="https://www.navalsteminterns.us/seap/" style="color: #68b0a1;">14. Science and Engineering Apprenticeship Program (SEAP) – Naval STEM</a></h3>
+                        <p>The Science and Engineering Apprenticeship Program (SEAP) provides high school students with the opportunity to gain hands-on experience in naval research alongside scientists and engineers at Department of Navy (DoN) laboratories. This paid internship allows students to explore STEM careers, contribute to real-world research, and develop technical skills in fields such as engineering, physics, and computer science. <br><strong>Eligibility:</strong> Must be a high school student at least 16 years old. <br><strong>Duration:</strong> Summer internship.</p>
+                    </div>
+                    
+                    <div class="internship">
+                        <h3><a href="https://txtav.com/en/careers/hs-internships" style="color: #68b0a1;">15. Textron Aviation High School Internships</a></h3>
+                        <p>Textron Aviation offers high school students hands-on internship opportunities in engineering, manufacturing, and aviation technology. Interns work alongside industry professionals, gaining experience in aircraft design, production, and maintenance while exploring careers in aerospace engineering and related fields. <br><strong>Eligibility:</strong> High school students (typically juniors and seniors). <br><strong>Duration:</strong> Summer internship.</p>
+                    </div>
+                    
+                    <div class="internship">
+                        <h3><a href="https://careers.spiritaero.com/intern-hs" style="color: #68b0a1;">16. Spirit AeroSystems High School Internship</a></h3>
+                        <p>The Spirit AeroSystems High School Internship provides students with hands-on experience in aerospace engineering and manufacturing. Interns will gain exposure to aircraft design, composite materials, and manufacturing processes while working alongside industry professionals. <br><strong>Eligibility:</strong> High school students. <br><strong>Duration:</strong> Summer internship.</p>
+                    </div>
+                    
+                    <div class="internship">
+                        <h3><a href="https://www.pppl.gov/high-school-summer-internship" style="color: #68b0a1;">17. Princeton Plasma Physics Laboratory (PPPL) High School Summer Internship</a></h3>
+                        <p>The PPPL High School Summer Internship offers students the opportunity to engage in cutting-edge plasma physics and fusion energy research. Interns work alongside scientists and engineers on real-world projects in fields such as engineering, computational modeling, and experimental physics. <br><strong>Eligibility:</strong> High school juniors and seniors (16+). <br><strong>Duration:</strong> Summer internship.</p>
+                    </div>
+                    
+                    <div class="internship">
+                        <h3><a href="https://www.usaeop.com/program/high-school-internships/" style="color: #68b0a1;">18. U.S. Army Educational Outreach Program (AEOP) High School Internships – Computer Science Focus</a></h3>
+                        <p>The AEOP High School Internships offer students the opportunity to engage in hands-on computer science and engineering research at Army research laboratories nationwide. Interns work alongside professional scientists and engineers on cutting-edge projects in cybersecurity, artificial intelligence, data science, and software development. <br><strong>Eligibility:</strong> High school students. <br><strong>Duration:</strong> Summer internship.</p>
+                    </div>
+                    
+                    <div class="internship">
+                        <h3><a href="https://www.nist.gov/iaao/academic-affairs-office/high-school-students-ship/ship-research" style="color: #68b0a1;">19. NIST Summer High School Intern Program (SHIP) – Computer Science & Engineering</a></h3>
+                        <p>The NIST Summer High School Intern Program (SHIP) offers students the opportunity to gain hands-on research experience in STEM fields, including computer science and engineering. Interns work alongside NIST scientists and engineers on real-world projects in areas such as cybersecurity, artificial intelligence, quantum computing, robotics, and materials science. <br><strong>Eligibility:</strong> High school juniors and seniors. <br><strong>Duration:</strong> Summer internship.</p>
+                    </div>
+                    
+                    <div class="internship">
+                        <h3><a href="https://acasummer.com/internships/" style="color: #68b0a1;">20. ACA Summer High School Internships</a></h3>
+                        <p>The ACA Summer High School Internship Program offers students the chance to gain hands-on experience in various fields, including computer science and engineering. Through this program, high school students work alongside industry professionals, engage in real-world projects, and develop technical and problem-solving skills. <br><strong>Eligibility:</strong> High school students. <br><strong>Duration:</strong> Summer internship.</p>
+                    </div>
+                    
+                    <div class="internship">
+                        <h3><a href="https://www.asms.net/academics/internships" style="color: #68b0a1;">21. Alabama School of Math and Science (ASMS) Summer Internship Program</a></h3>
+                        <p>Offers rising 11th and 12th-grade students a summer internship experience involving a minimum of 60 work hours, providing practical exposure to their fields of interest. <br><strong>Eligibility:</strong> Rising 11th and 12th graders. <br><strong>Duration:</strong> Summer internship (minimum of 60 hours).</p>
+                    </div>
+                </section>
+                <section id="volunteering" class="category-section">
+                    <h2>Volunteer Opportunities</h2>
+                    
+                    <div class="internship">
+                        <h3><a href="https://www.eng.auburn.edu/outreach/k-12/Volunteer.html" style="color: #3f7e9c;">1. Auburn University's Samuel Ginn College of Engineering – K-12 Outreach Programs</a></h3>
+                        <p>High school students can volunteer in various outreach activities such as E-Day, TEAMS, BEST Robotics, and PEAK, assisting in organizing and facilitating events that promote STEM education among younger students.</p>
+                        <p><b>Eligibility:</b> High school students (ages 16+). <br><b>Duration:</b> Ongoing volunteer opportunities.</p>
+                    </div>
+                    
+                    <div class="internship">
+                        <h3><a href="https://mcwane.org/volunteer/" style="color: #3f7e9c;">2. McWane Science Center – Teen Volunteer Program</a></h3>
+                        <p>Located in Birmingham, this program offers year-round opportunities for teens to engage in STEM-related activities, including assisting in camps and presenting hands-on science activities to the public.</p>
+                        <p><b>Eligibility:</b> High school students. <br><b>Duration:</b> Ongoing volunteer opportunities.</p>
+                    </div>
+                    
+                    <div class="internship">
+                        <h3><a href="https://www.aztechcouncil.org/become-a-teals-volunteer/" style="color: #3f7e9c;">3. TEALS Volunteer with Arizona Technology Council</a></h3>
+                        <p>The Technology Education and Literacy in Schools (TEALS) program seeks volunteers to work directly with classroom teachers, helping them build and grow their computer science teaching capacity through year-long support and training.</p>
+                        <p><b>Eligibility:</b> High school students. <br><b>Duration:</b> Year-long commitment.</p>
+                    </div>
+                    
+                    <div class="internship">
+                        <h3><a href="https://www.thetech.org/support/volunteer-innovator-program/" style="color: #3f7e9c;">4. The Tech Museum of Innovation - Volunteer Innovator Program</a></h3>
+                        <p>The Volunteer Innovator Program offers high school students the opportunity to assist in delivering hands-on STEM activities and workshops to museum visitors, including youth camps, field trips, and school visits. Volunteers can gain valuable experience in teaching, communication, and tech-related skills, including robotics and coding.</p>
+                        <p><b>Eligibility:</b> High school students aged 15-18. <br><b>Duration:</b> Ongoing opportunities, with a focus on summer programs and special events.</p>
+                    </div>
+                    
+                    <div class="internship">
+                        <h3><a href="https://mosi.org/volunteer/" style="color: #3f7e9c;">5. The Museum of Science & Industry (MOSI) Volunteer Program</a></h3>
+                        <p>Allows students to assist in educational programs and exhibits related to engineering and technology.</p>
+                        <p><b>Eligibility:</b> High school students. <br><b>Duration:</b> Ongoing volunteer opportunities.</p>
+                    </div>
+                    
+                    <div class="internship">
+                        <h3><a href="https://www.atlantahabitat.org/volunteer/individual-volunteering" style="color: #3f7e9c;">6. Atlanta Habitat for Humanity – Construction Volunteer</a></h3>
+                        <p>Atlanta Habitat offers volunteer opportunities for high school students on construction sites. Students will work on building homes, gaining experience in civil engineering and construction.</p>
+                        <p><b>Eligibility:</b> High school students, ages 16+. <br><b>Duration:</b> Ongoing volunteer opportunities.</p>
+                    </div>
+                    
+                    <div class="internship">
+                        <h3><a href="https://www.georgia.ja.org/volunteer" style="color: #3f7e9c;">7. Junior Achievement of Georgia – Volunteer Mentor</a></h3>
+                        <p>Students can mentor younger students in engineering-related programs, assisting with robotics projects, STEM challenges, and career exploration in engineering fields.</p>
+                        <p><b>Eligibility:</b> High school students in Georgia. <br><b>Duration:</b> Ongoing volunteer opportunities.</p>
+                    </div>
+                    
+                    <div class="internship">
+                        <h3><a href="https://stem.idaho.gov/volunteer-form/" style="color: #3f7e9c;">8. Idaho STEM Action Center Volunteering</a></h3>
+                        <p>The Idaho STEM Action Center offers volunteer opportunities for high school students to help organize and facilitate STEM workshops and events. Students can engage in activities like tutoring, mentoring younger students, or assisting in local engineering challenges and competitions.</p>
+                        <p><b>Eligibility:</b> High school students. <br><b>Duration:</b> Ongoing volunteer opportunities.</p>
+                    </div>
+                    
+                    <div class="internship">
+                        <h3><a href="https://www.msichicago.org/support/volunteer/volunteer-application" style="color: #3f7e9c;">9. The Chicago Museum of Science and Industry Volunteer Program</a></h3>
+                        <p>Students can volunteer at the museum, assisting with engineering-related exhibits and learning opportunities related to innovation and technology.</p>
+                        <p><b>Eligibility:</b> High school students. <br><b>Duration:</b> Ongoing.</p>
+                    </div>
+                    
+                    <div class="internship">
+                        <h3><a href="https://www.firstinspires.org/" style="color: #3f7e9c;">10. FIRST Robotics Volunteer</a></h3>
+                        <p>Volunteer to help organize and run robotics events, mentor students, and assist in building robots.</p>
+                        <p><b>Eligibility:</b> High school students. <br><b>Duration:</b> Ongoing.</p>
+                    </div>
+                    
+                    <div class="internship">
+                        <h3><a href="https://kidsintech.org/volunteer-2/" style="color: #3f7e9c;">11. Kids in Tech Volunteer Program</a></h3>
+                        <p>The Kids in Tech Volunteer Program offers high school students the opportunity to mentor younger students in STEM fields, focusing on engineering, technology, and entrepreneurship. Volunteers assist in teaching various technical skills, such as coding, robotics, and engineering design, through after-school programs, workshops, and camps. This program allows high school volunteers to enhance their leadership skills, gain teaching experience, and inspire the next generation of engineers and technologists.</p>
+                        <p><b>Eligibility:</b> High school students (ages 14+). <br><b>Duration:</b> Ongoing volunteer opportunities.</p>
+                    </div>
+                    
+                    <div class="internship">
+                        <h3><a href="https://www.techgoeshome.org/volunteers" style="color: #3f7e9c;">12. Tech Goes Home Volunteer Program</a></h3>
+                        <p>The Tech Goes Home Volunteer Program provides high school students the opportunity to volunteer in their communities by helping teach technology skills to underserved youth and families. Volunteers assist in facilitating digital literacy workshops, guiding students through technology basics, and supporting online education initiatives.</p>
+                        <p><b>Eligibility:</b> High school students (ages 16+). <br><b>Duration:</b> Ongoing volunteer opportunities.</p>
+                    </div>
+                    
+                    <div class="internship">
+                        <h3><a href="https://bostonpic.org/employer-opportunities/high-school-partnership/jobs-internships/tech-apprentice/" style="color: #3f7e9c;">13. Boston PIC Tech Apprentice Program</a></h3>
+                        <p>The Boston PIC Tech Apprentice Program offers high school students the opportunity to gain hands-on experience in the tech industry, with a focus on engineering, software development, and IT. As apprentices, students work with local companies to assist in technology projects, learning new skills and developing a strong understanding of the tech and engineering fields.</p>
+                        <p><b>Eligibility:</b> High school students (ages 16+). <br><b>Duration:</b> Ongoing volunteer opportunities.</p>
+                    </div>
+                    
+                    <div class="internship">
+                        <h3><a href="https://www.nasa.gov/centers-and-facilities/langley/student-volunteer-program/" style="color: #3f7e9c;">14. NASA Langley Research Center Student Volunteer Program</a></h3>
+                        <p>The NASA Langley Research Center Student Volunteer Program provides high school students the chance to gain real-world experience in aerospace engineering and technology. Volunteers assist with various research projects, working alongside NASA engineers and scientists.</p>
+                        <p><b>Eligibility:</b> High school students (ages 16+). <br><b>Duration:</b> Ongoing volunteer opportunities.</p>
+                    </div>
+                    
+                    <div class="internship">
+                        <h3><a href="https://girlswhocode.com/" style="color: #3f7e9c;">15. Girls Who Code Volunteer Program</a></h3>
+                        <p>The Girls Who Code Volunteer Program allows high school students to participate as volunteers, helping to teach coding to younger girls. Volunteers assist in creating a supportive, encouraging environment where participants learn programming skills and gain confidence in technology. This initiative is designed to close the gender gap in tech and inspire the next generation of female leaders in computer science.</p>
+                        <p><b>Eligibility:</b> High school students (ages 16+). <br><b>Duration:</b> Ongoing volunteer opportunities.</p>
+                    </div>
+                </section>   
+                <section id="programs" class="category-section">
+                    <h2>Program Opportunities</h2>
+                    
+                    <div class="program">
+                        <h3><a href="https://www.eng.auburn.edu/outreach/k-12/engineering-summer-camp/index.html" style="color: #48966c;">1. Auburn University's Engineering Summer Expo</a></h3>
+                        <p>A one-day event for rising 9th to 11th graders, offering a broad overview of the engineering profession through interactive exhibits and hands-on activities.</p>
+                    </div>
+                    
+                    <div class="program">
+                        <h3><a href="https://www.ansep.net/component/acceleration-academy-full-time/" style="color: #48966c;">2. Alaska Native Science & Engineering Program (ANSEP) Acceleration Academy</a></h3>
+                        <p>ANSEP offers high school students the opportunity to earn college credits in STEM fields, including engineering and computer science, while gaining exposure to these careers.</p>
+                    </div>
+                    
+                    <div class="program">
+                        <h3><a href="https://globalscholars.yale.edu/" style="color: #48966c;">3. Yale Young Global Scholars Program – STEM Track</a></h3>
+                        <p>The Yale Young Global Scholars program is a prestigious summer program where high school students can participate in specialized tracks such as Science, Technology, and Engineering. Students gain advanced knowledge through lectures, research projects, and mentorship.</p>
+                        <p><b>Eligibility:</b> High school students (grades 10-11). <br><b>Duration:</b> Summer program.</p>
+                    </div>
+                    
+                    <div class="program">
+                        <h3><a href="https://www.hartford.edu/community/summerplace/robotics-coding/" style="color: #48966c;">4. University of Hartford Pre-College Engineering & Computer Science Program</a></h3>
+                        <p>The University of Hartford offers pre-college programs in engineering and computer science, where high school students can explore topics like programming, robotics, and circuit design. Students work on projects and gain experience in the field.</p>
+                        <p><b>Eligibility:</b> High school students (grades 9-12). <br><b>Duration:</b> Summer program.</p>
+                    </div>
+                    
+                    <div class="program">
+                        <h3><a href="https://spacegrant.org/sg_programs/dasef-delaware-aerospace-academy/" style="color: #48966c;">5. Delaware Space Grant Consortium</a></h3>
+                        <p>Offers summer programs focused on aerospace science, providing hands-on experiences in engineering and technology.</p>
+                    </div>
+                    
+                    <div class="program">
+                        <h3><a href="https://www.cpet.ufl.edu/students/uf-cpet-summer-programs/gator-artificial-intelligence-camp/" style="color: #48966c;">6. Gator Artificial Intelligence Camp</a></h3>
+                        <p>The Gator Artificial Intelligence Camp at the University of Florida is a summer program designed to introduce high school students to the fundamentals of artificial intelligence (AI). Students will work on hands-on projects, learn coding, and explore AI concepts such as machine learning, neural networks, and robotics. The camp aims to spark interest in AI and computer science careers by providing practical experiences with AI applications.</p>
+                        <p><b>Eligibility:</b> High school students, grades 9-12. <br><b>Duration:</b> Summer program.</p>
+                    </div>
+                    
+                    <div class="program">
+                        <h3><a href="https://www.cpet.ufl.edu/students/uf-cpet-summer-programs/research-immersion-in-science-and-engineering/" style="color: #48966c;">7. Research Immersion in Science and Engineering (RISE)</a></h3>
+                        <p>The Research Immersion in Science and Engineering (RISE) program at the University of Florida offers high school students the opportunity to engage in hands-on research in science, technology, engineering, and mathematics (STEM). Participants will work alongside faculty and graduate students on real-world research projects in various fields of engineering and science. This program aims to expose students to academic research and foster a passion for STEM careers.</p>
+                        <p><b>Eligibility:</b> High school students, grades 10-12. <br><b>Duration:</b> Summer program.</p>
+                    </div>
+                    
+                    <div class="program">
+                        <h3><a href="https://www.caterpillar.com/en/careers/career-areas/college/unitedstates/student-trainee-program.html" style="color: #48966c;">8. Caterpillar Student Trainee Program</a></h3>
+                        <p>High school students have the opportunity to work with engineers at Caterpillar, gaining hands-on experience in mechanical, electrical, and industrial engineering. Interns assist with ongoing projects, testing, and design processes.</p>
+                        <p><b>Eligibility:</b> High school students, ages 16+. <br><b>Duration:</b> Summer program.</p>
+                    </div>
+                    
+                    <div class="program">
+                        <h3><a href="https://ae.gatech.edu/step-program-georgia-tech#:~:text=What%20is%20STEP?,Space%20Grant%20Consortium%20(GSGC)." style="color: #48966c;">9. Georgia Tech STEP Program</a></h3>
+                        <p>The STEP (Science, Technology, Engineering, and Mathematics Exploration Program) is a summer program hosted by Georgia Tech, designed for high school students interested in STEM fields, including engineering and computer science. Participants engage in hands-on learning experiences with faculty and professionals, working on projects related to space, robotics, and other cutting-edge engineering fields. This program aims to spark interest in STEM careers and provide students with insight into engineering disciplines.</p>
+                        <p><b>Eligibility:</b> High school students (grades 9-12). <br><b>Duration:</b> Summer program.</p>
+                    </div>
+                    
+                    <div class="program">
+                        <h3><a href="https://www.envisionexperience.com/explore-our-programs/national-youth-leadership-forum-engineering-and-technology" style="color: #48966c;">10. National Youth Leadership Forum: Engineering and Technology</a></h3>
+                        <p>The National Youth Leadership Forum (NYLF): Engineering and Technology program offers high school students the chance to explore the field of engineering through hands-on activities, workshops, and interactive learning. Students will visit top engineering facilities, meet with industry professionals, and engage in real-world engineering challenges. This program aims to inspire and prepare future leaders in engineering and technology.</p>
+                        <p><b>Eligibility:</b> High school students (grades 9-12). <br><b>Duration:</b> Summer program.</p>
+                    </div>
+                    
+                    <div class="program">
+                        <h3><a href="https://bwsi.mit.edu/" style="color: #48966c;">11. MIT Beaver Works Summer Institute</a></h3>
+                        <p>The MIT Beaver Works Summer Institute offers high school students an intensive, project-based learning experience in engineering, computer science, and robotics. Participants work on hands-on projects that integrate engineering, programming, and technology. The program is designed to teach students complex problem-solving skills and provide them with exposure to real-world applications in STEM fields, under the guidance of MIT faculty and staff.</p>
+                        <p><b>Eligibility:</b> High school students (grades 10–12). <br><b>Duration:</b> Summer program.</p>
+                    </div>
+                    
+                    <div class="program">
+                        <h3><a href="https://ei.jhu.edu/" style="color: #48966c;">12. Johns Hopkins Engineering Innovation Pre-College Program</a></h3>
+                        <p>The Johns Hopkins Engineering Innovation Pre-College Program offers high school students a chance to explore the world of engineering through a hands-on, project-based curriculum. Students will engage in real-world engineering problems, work in teams, and gain exposure to a variety of engineering disciplines such as mechanical, electrical, and biomedical engineering. This program is designed to give participants a taste of what it's like to study engineering at a top-tier university and develop critical problem-solving skills.</p>
+                        <p><b>Eligibility:</b> High school students (grades 9–12). <br><b>Duration:</b> Summer program.</p>
+                    </div>
+                    
+                    <div class="program">
+                        <h3><a href="https://www.inspiritai.com/liveonline?__hstc=21858660.d58d199077be9f2f5f12006d433644f6.1675135258343.1683244290698.1683247432258.119&__hssc=21858660.9.1683247432258&__hsfp=559709565" style="color: #48966c;">13. Inspirit AI Live Online Program</a></h3>
+                        <p>The Inspirit AI Live Online Program provides high school students with the opportunity to learn about artificial intelligence (AI) through live, interactive online classes. Students will engage in hands-on projects, working with machine learning algorithms and real-world data, and will gain a deep understanding of AI’s applications in various industries. This program is designed to equip students with the skills needed to pursue further education and careers in the rapidly evolving field of AI.</p>
+                        <p><b>Eligibility:</b> High school students (ages 13+). <br><b>Duration:</b> Online program.</p>
+                    </div>
+                    
+                    <div class="program">
+                        <h3><a href="https://www.seecamp.org/" style="color: #48966c;">14. SEECamp Summer Program</a></h3>
+                        <p>SEECamp is a hands-on, immersive summer program offered by the Science and Engineering Exploration Camp (SEEC) at the University of Maryland. This program provides high school students with the opportunity to engage in engineering, technology, and computer science through team-based projects, labs, and activities. Students gain real-world experience in applying engineering principles, developing prototypes, and working in a collaborative environment.</p>
+                        <p><b>Eligibility:</b> High school students (grades 9–12). <br><b>Duration:</b> Summer program.</p>
+                    </div>
+                    
+                    <div class="program">
+                        <h3><a href="https://ssp.dcie.miami.edu/program-information/academic-landing/academic-areas-of-study/index.html" style="color: #48966c;">15. University of Miami Summer Scholars Program</a></h3>
+                        <p>The University of Miami Summer Scholars Program offers high school students the chance to explore various academic areas of study, including engineering, computer science, and technology. This immersive summer program is designed to provide students with an in-depth look at different fields of study through hands-on projects, workshops, and access to university-level resources.</p>
+                        <p><b>Eligibility:</b> High school students (ages 15–18). <br><b>Duration:</b> Summer program.</p>
+                    </div>
+                    
+                    <div class="program">
+                        <h3><a href="https://web.mit.edu/wtp/" style="color: #48966c;">16. MIT Women's Technology Program (WTP)</a></h3>
+                        <p>The MIT Women’s Technology Program (WTP) is a summer program designed to introduce high school girls to the fields of electrical engineering, computer science, and mechanical engineering. The program provides an immersive, hands-on experience with classes and projects that help participants develop critical thinking and problem-solving skills.</p>
+                        <p><b>Eligibility:</b> High school girls (grades 11–12). <br><b>Duration:</b> Summer program.</p>
+                    </div>
+                    
+                    <div class="program">
+                        <h3><a href="https://undergrad.admissions.columbia.edu/columbia-engineering-experience-ce2" style="color: #48966c;">17. Columbia Engineering Experience (CE²)</a></h3>
+                        <p>The Columbia Engineering Experience (CE²) is a summer program that provides high school students with the opportunity to explore various fields of engineering and technology. Participants engage in hands-on activities, attend lectures, and work on real-world projects under the guidance of Columbia University engineering faculty.</p>
+                        <p><b>Eligibility:</b> High school students (grades 10–11). <br><b>Duration:</b> Summer program.</p>
+                    </div>
+                    
+                    <div class="program">
+                        <h3><a href="https://sps.northwestern.edu/college-preparation/in-focus-sessions.php" style="color: #48966c;">18. Northwestern University InFocus Sessions</a></h3>
+                        <p>The InFocus Sessions at Northwestern University offer high school students the opportunity to engage in intensive, academic sessions focused on various fields of study, including engineering, computer science, and technology. These sessions are designed to provide students with an immersive experience where they can explore college-level coursework, participate in hands-on projects, and learn from top professors.</p>
+                        <p><b>Eligibility:</b> High school students (grades 10–12). <br><b>Duration:</b> Summer program.</p>
+                    </div>
+                    
+                    <div class="program">
+                        <h3><a href="https://esap.seas.upenn.edu/" style="color: #48966c;">19. Penn Engineering Science and Technology (ESAP) Program</a></h3>
+                        <p>The Penn Engineering Science and Technology (ESAP) program is a prestigious summer opportunity for high school students interested in engineering and applied sciences. Hosted by the University of Pennsylvania's School of Engineering and Applied Science, this program provides an in-depth look at various engineering disciplines through hands-on projects, collaborative work, and academic coursework.</p>
+                        <p><b>Eligibility:</b> High school students (grades 10–11). <br><b>Duration:</b> Summer program.</p>
+                    </div>
+                    
+                    <div class="program">
+                        <h3><a href="https://www.summerscienceprogram.org/" style="color: #48966c;">20. The Summer Science Program (SSP) in Astrophysics</a></h3>
+                        <p>The Summer Science Program (SSP) offers a prestigious, immersive, hands-on opportunity for high school students interested in STEM fields—specifically astrophysics. Students work on real research projects in a team environment, collaborating with experts in the field.</p>
+                        <p><b>Eligibility:</b> High school students (grades 11–12). <br><b>Duration:</b> Summer program.</p>
+                    </div>
+                </section> 
+                <section id="programs" class="category-section">
+                    <!-- Existing Programs content -->
+                    <!-- ... (programs listed here) -->
+                
+                    <!-- Add a horizontal line to signify the end of the section -->
+                    <hr style="border: 1px solid #003f33; margin-top: 30px; margin-bottom: 30px;">
+                </section>                                                                  
+    </div>
+</section>
+
+<section class="section" id="medical">
+    <div class="container">
+        <div class="content">
+            <h2>Medical & Healthcare</h2>
+            <p>Find opportunities in medical research, hospital internships, public health, and biotechnology.</p>
+            <h2>Internship Opportunities</h2>
+            <div class="internship">
+                <h3><a href="https://www.standoutconnect.org/" target="_blank" style="color: #68b0a1;">1. StandOut Connect Internship Program</a></h3>
+                StandOut Connect offers high school students opportunities to work in fields related to healthcare, technology, and research. Interns will engage in hands-on projects and gain mentorship from industry professionals.
+                <p><strong>Eligibility:</strong> High school students (ages 15-18)</p>
+                <p><strong>Duration:</strong> Summer (8-10 weeks)</p>
+            </div>
+            
+            <div class="internship">
+                <h3><a href="https://www.masslifesciences.com/high-school-apprenticeship-challenge-for-interns/" target="_blank" style="color: #68b0a1;">2. Massachusetts Life Sciences High School Apprenticeship Challenge</a></h3>
+                This program offers high school students an opportunity to work in a biomedical research lab, gaining hands-on experience in scientific techniques and data analysis.
+                <p><strong>Eligibility:</strong> High school students (ages 16-18)</p>
+                <p><strong>Duration:</strong> Summer (6-8 weeks)</p>
+            </div>
+            
+            <div class="internship">
+                <h3><a href="https://www.massgeneral.org/neurology/education-and-training/youth-research-and-education" target="_blank" style="color: #68b0a1;">3. Massachusetts General Hospital Youth Research and Education Program</a></h3>
+                This program provides high school students with the opportunity to work on clinical research projects in neurology, assisting with data collection, analysis, and report preparation.
+                <p><strong>Eligibility:</strong> High school students (ages 15-18)</p>
+                <p><strong>Duration:</strong> Summer (6-8 weeks)</p>
+            </div>
+            
+            <div class="internship">
+                <h3><a href="https://www.fredhutch.org/en/education-training/high-school-students/summer-high-school-internship-program.html" target="_blank" style="color: #68b0a1;">4. Fred Hutch Summer High School Internship Program</a></h3>
+                Fred Hutch offers high school students the chance to gain laboratory experience in biomedical research, focusing on cancer, infectious disease, and immunology.
+                <p><strong>Eligibility:</strong> High school students (ages 16-18)</p>
+                <p><strong>Duration:</strong> Summer (8 weeks)</p>
+            </div>
+            
+            <div class="internship">
+                <h3><a href="https://www.genome.gov/careers-training/research-training/Summer-Internship-in-Biomedical-Research" target="_blank" style="color: #68b0a1;">5. NIH Summer Internship in Biomedical Research</a></h3>
+                This competitive program allows high school students to gain laboratory experience and mentorship in various biomedical research fields at the National Institutes of Health (NIH).
+                <p><strong>Eligibility:</strong> High school students (ages 16-18)</p>
+                <p><strong>Duration:</strong> Summer (8-10 weeks)</p>
+            </div>
+            
+            <div class="internship">
+                <h3><a href="https://www.wistar.org/education-training/high-school-program-biomedical-research/" target="_blank" style="color: #68b0a1;">6. Wistar High School Biomedical Research Program</a></h3>
+                This program offers high school students an introduction to laboratory research in immunology, cancer, and infectious diseases, providing mentorship from faculty and researchers.
+                <p><strong>Eligibility:</strong> High school students (ages 16-18)</p>
+                <p><strong>Duration:</strong> Summer (8 weeks)</p>
+            </div>
+            
+            <div class="internship">
+                <h3><a href="https://www.jcvi.org/careers#internships" target="_blank" style="color: #68b0a1;">7. JCVI Summer Internships</a></h3>
+                The J. Craig Venter Institute offers high school students opportunities to work on genomic research, focusing on bioinformatics, synthetic biology, and data analysis.
+                <p><strong>Eligibility:</strong> High school students (ages 16-18)</p>
+                <p><strong>Duration:</strong> Summer (8-10 weeks)</p>
+            </div>
+            
+            <div class="internship">
+                <h3><a href="https://www.nhlbi.nih.gov/grants-and-training/training-and-career-development/summer-internship-program" target="_blank" style="color: #68b0a1;">8. NHLBI Summer Internship Program</a></h3>
+                The National Heart, Lung, and Blood Institute offers high school students the opportunity to work in labs focused on heart and lung diseases, research techniques, and patient care.
+                <p><strong>Eligibility:</strong> High school students (ages 16-18)</p>
+                <p><strong>Duration:</strong> Summer (8-10 weeks)</p>
+            </div>
+            
+            <div class="internship">
+                <h3><a href="https://mageewomens.org/for-researchers/education/high-school-summer-internship-program" target="_blank" style="color: #68b0a1;">9. Magee-Womens Research Institute High School Internship Program</a></h3>
+                High school students interested in biomedical research have the opportunity to work in labs, contributing to projects on women’s health, cancer, and other medical research topics.
+                <p><strong>Eligibility:</strong> High school students (ages 16-18)</p>
+                <p><strong>Duration:</strong> Summer (8 weeks)</p>
+            </div>
+            
+            <div class="internship">
+                <h3><a href="https://www.tgen.org/education/helios-scholars-at-tgen/" target="_blank" style="color: #68b0a1;">10. TGen Helios Scholars Internship</a></h3>
+                The Translational Genomics Research Institute (TGen) offers high school students the chance to work in cutting-edge biomedical research labs, learning techniques in genomics and bioinformatics.
+                <p><strong>Eligibility:</strong> High school students (ages 16-18)</p>
+                <p><strong>Duration:</strong> Summer (8 weeks)</p>
+            </div>
+            
+            <div class="internship">
+                <h3><a href="https://careers.state.gov/interns-fellows/student-internship-program/" target="_blank" style="color: #68b0a1;">11. U.S. Department of State Student Internship Program</a></h3>
+                The State Department offers high school students the opportunity to intern with U.S. embassies and consulates, gaining valuable experience in diplomacy and international affairs.
+                <p><strong>Eligibility:</strong> High school students (ages 16-18)</p>
+                <p><strong>Duration:</strong> Summer (8-10 weeks)</p>
+            </div>
+            
+            <div class="internship">
+                <h3><a href="https://dhcareerinstitute.org/internship-programs/project-search-at-dhmc/#applications" target="_blank" style="color: #68b0a1;">12. DH Career Institute Project SEARCH Internship</a></h3>
+                Project SEARCH offers internships to high school students with disabilities to gain work experience in healthcare and medical settings at Dartmouth-Hitchcock Medical Center.
+                <p><strong>Eligibility:</strong> High school students (ages 16-18)</p>
+                <p><strong>Duration:</strong> Year-round (Internships may last up to a year)</p>
+            </div>
+            
+            <div class="internship">
+                <h3><a href="https://mpfi.org/community/education-outreach/high-school-internship/" target="_blank" style="color: #68b0a1;">13. MPFI High School Internship Program</a></h3>
+                The Max Planck Florida Institute for Neuroscience offers high school students the chance to work with neuroscientists in research labs, gaining hands-on experience in the biomedical field.
+                <p><strong>Eligibility:</strong> High school students (ages 16-18)</p>
+                <p><strong>Duration:</strong> Summer (8 weeks)</p>
+            </div>
+            
+            <div class="internship">
+                <h3><a href="https://www.childrenscolorado.org/research-innovation/training-opportunities/" target="_blank" style="color: #68b0a1;">14. Children’s Hospital Colorado Research Internship</a></h3>
+                This program allows high school students to gain research experience in various pediatric health and medical research projects at Children’s Hospital Colorado.
+                <p><strong>Eligibility:</strong> High school students (ages 16-18)</p>
+                <p><strong>Duration:</strong> Summer (6-8 weeks)</p>
+            </div>
+            
+            <div class="internship">
+                <h3><a href="https://cancer.iu.edu/education/summer/index.html" target="_blank" style="color: #68b0a1;">15. IU School of Medicine Summer Research Internship</a></h3>
+                The Indiana University School of Medicine offers high school students the chance to work on cancer research projects, learning laboratory techniques and research methods.
+                <p><strong>Eligibility:</strong> High school students (ages 16-18)</p>
+                <p><strong>Duration:</strong> Summer (8 weeks)</p>
+            </div>
+            
+            <div class="internship">
+                <h3><a href="https://www.mcw.edu/education/pathway-programs/for-high-school-students" target="_blank" style="color: #68b0a1;">16. Medical College of Wisconsin Pathway Program</a></h3>
+                The Pathway Program offers high school students the opportunity to gain experience in medical and clinical research settings, focusing on health disparities and biomedical topics.
+                <p><strong>Eligibility:</strong> High school students (ages 16-18)</p>
+                <p><strong>Duration:</strong> Summer (8 weeks)</p>
+            </div>
+            
+            <div class="internship">
+                <h3><a href="https://med.nyu.edu/departments-institutes/population-health/divisions-sections-centers/medical-ethics/education/internship-program?utm_source=chatgpt.com" target="_blank" style="color: #68b0a1;">17. NYU Medical Ethics Internship Program</a></h3>
+                NYU’s Medical Ethics Internship program offers high school students the opportunity to work on research projects and engage with healthcare professionals in the field of medical ethics.
+                <p><strong>Eligibility:</strong> High school students (ages 16-18)</p>
+                <p><strong>Duration:</strong> Summer (8 weeks)</p>
+            </div>
+            
+            <div class="internship">
+                <h3><a href="https://my.clevelandclinic.org/departments/education/center-for-youth-and-college-education/internships" target="_blank" style="color: #68b0a1;">18. Cleveland Clinic Youth Internship Program</a></h3>
+                The Cleveland Clinic offers high school students opportunities to intern in healthcare settings, learning about medical research, patient care, and clinical trials.
+                <p><strong>Eligibility:</strong> High school students (ages 16-18)</p>
+                <p><strong>Duration:</strong> Summer (6-8 weeks)</p>
+            </div>
+            
+            <div class="internship">
+                <h3><a href="https://kplaunch.kaiserpermanente.org/high-school-program/" target="_blank" style="color: #68b0a1;">19. Kaiser Permanente High School Program</a></h3>
+                Kaiser Permanente offers internships to high school students in various healthcare fields, allowing them to learn from professionals and contribute to projects in patient care and medical research.
+                <p><strong>Eligibility:</strong> High school students (ages 16-18)</p>
+                <p><strong>Duration:</strong> Summer (6-8 weeks)</p>
+            </div>
+            
+            <div class="internship">
+                <h3><a href="https://www.cedars-sinai.edu/health-sciences-university/research/departments-institutes/regenerative-medicine/educational-programs.html" target="_blank" style="color: #68b0a1;">20. Cedars-Sinai Regenerative Medicine Internship Program</a></h3>
+                Cedars-Sinai offers a program for high school students interested in regenerative medicine, providing research experience in stem cell biology and tissue engineering.
+                <p><strong>Eligibility:</strong> High school students (ages 16-18)</p>
+                <p><strong>Duration:</strong> Summer (8 weeks)</p>
+            </div>
+            <h2>Volunteer Opportunities</h2>
+            <div class="volunteer">
+                <h3><a href="https://www.bmc.org/volunteer-services/junior-summer-volunteer-program" style="color: #3f7e9c;">1. Junior Summer Volunteer Program at Boston Medical Center</a></h3>
+                <p>This program offers high school students the opportunity to gain hands-on experience in healthcare settings, while learning about various hospital departments.</p>
+                <p><b>Eligibility:</b> High school students. <br><b>Duration:</b> Summer program (varies by position).</p>
+            </div>
+            
+            <div class="volunteer">
+                <h3><a href="https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=166ed05b-9235-4bfe-b7dd-f1e4871fea3b&ccId=19000101_000001&type=MP&lang=en_US&jobId=933348" style="color: #3f7e9c;">2. ADP Summer Volunteer Program</a></h3>
+                <p>This program provides volunteer opportunities to high school students, helping them build valuable work experience while contributing to a positive community impact.</p>
+                <p><b>Eligibility:</b> High school students. <br><b>Duration:</b> Summer program.</p>
+            </div>
+            
+            <div class="volunteer">
+                <h3><a href="https://portsmouthhospital.com/patients-and-visitors/volunteering.dot" style="color: #3f7e9c;">3. Volunteering at Portsmouth Hospital</a></h3>
+                <p>Portsmouth Hospital offers volunteer opportunities for those interested in assisting in patient care, administrative support, and other hospital services.</p>
+                <p><b>Eligibility:</b> High school students (age 15+). <br><b>Duration:</b> Flexible hours, typically summer or year-round.</p>
+            </div>
+            
+            <div class="volunteer">
+                <h3><a href="https://www.snhhealth.org/about-us/about-snhh/volunteer?utm_source=chatgpt.com" style="color: #3f7e9c;">4. Volunteering at Southern New Hampshire Health</a></h3>
+                <p>Southern New Hampshire Health offers volunteer roles in various departments, including patient care and administrative support.</p>
+                <p><b>Eligibility:</b> High school students (ages 14+). <br><b>Duration:</b> Flexible hours, with both short-term and long-term options available.</p>
+            </div>
+            
+            <div class="volunteer">
+                <h3><a href="https://stjosephhospital.com/support-st-joseph/volunteer-opportunities/?utm_source=chatgpt.com" style="color: #3f7e9c;">5. Volunteering at St. Joseph Hospital</a></h3>
+                <p>St. Joseph Hospital provides volunteer opportunities for high school students looking to gain exposure to healthcare careers while assisting patients and staff.</p>
+                <p><b>Eligibility:</b> High school students (ages 14+). <br><b>Duration:</b> Flexible, including summer and year-round opportunities.</p>
+            </div>
+            
+            <div class="volunteer">
+                <h3><a href="https://www.redcross.org/volunteer/become-a-volunteer.html" style="color: #3f7e9c;">6. American Red Cross Volunteer Program</a></h3>
+                <p>The American Red Cross offers various volunteer roles in disaster relief, health services, and administrative support.</p>
+                <p><b>Eligibility:</b> High school students (ages 16+). <br><b>Duration:</b> Flexible, with both short-term and long-term opportunities.</p>
+            </div>
+            
+            <div class="volunteer">
+                <h3><a href="https://www.childrenshospital.org/ways-help/volunteer-services/volunteer-opportunities-boston" style="color: #3f7e9c;">7. Volunteering at Boston Children's Hospital</a></h3>
+                <p>Boston Children's Hospital offers volunteer roles where high school students can gain experience while providing comfort and assistance to patients.</p>
+                <p><b>Eligibility:</b> High school students (ages 14+). <br><b>Duration:</b> Summer program or year-round.</p>
+            </div>
+            
+            <div class="volunteer">
+                <h3><a href="https://www.hopkinsmedicine.org/volunteer-services/jhh#opportunities" style="color: #3f7e9c;">8. Volunteering at Johns Hopkins Hospital</a></h3>
+                <p>Johns Hopkins offers a variety of volunteer opportunities in healthcare settings, giving students exposure to different aspects of patient care and hospital operations.</p>
+                <p><b>Eligibility:</b> High school students (ages 16+). <br><b>Duration:</b> Summer program or long-term commitment.</p>
+            </div>
+            
+            <div class="volunteer">
+                <h3><a href="https://stanfordhealthcare.org/events/volunteer-services-junior-summer-program.html" style="color: #3f7e9c;">9. Junior Summer Program at Stanford Healthcare</a></h3>
+                <p>Stanford Healthcare offers high school students the chance to volunteer in various healthcare departments, providing exposure to the medical field.</p>
+                <p><b>Eligibility:</b> High school students (grades 10-12). <br><b>Duration:</b> Summer program.</p>
+            </div>
+            
+            <div class="volunteer">
+                <h3><a href="https://my.clevelandclinic.org/locations/union-hospital/about/volunteer" style="color: #3f7e9c;">10. Volunteering at Cleveland Clinic</a></h3>
+                <p>Cleveland Clinic provides volunteer opportunities for high school students, helping them gain experience in patient care and hospital services.</p>
+                <p><b>Eligibility:</b> High school students (ages 16+). <br><b>Duration:</b> Flexible hours, including summer and year-round options.</p>
+            </div>
+            
+            <div class="volunteer">
+                <h3><a href="https://www.mountsinai.org/locations/mount-sinai/about/volunteer" style="color: #3f7e9c;">11. Volunteering at Mount Sinai</a></h3>
+                <p>Mount Sinai offers high school students volunteer opportunities in patient care, support services, and research.</p>
+                <p><b>Eligibility:</b> High school students (ages 14+). <br><b>Duration:</b> Flexible hours, summer and year-round.</p>
+            </div>
+            
+            <div class="volunteer">
+                <h3><a href="https://health.ucsd.edu/support/volunteer/" style="color: #3f7e9c;">12. Volunteering at UC San Diego Health</a></h3>
+                <p>UC San Diego Health provides volunteer roles for high school students interested in healthcare and hospital operations.</p>
+                <p><b>Eligibility:</b> High school students (ages 16+). <br><b>Duration:</b> Flexible, including summer programs.</p>
+            </div>
+            
+            <div class="volunteer">
+                <h3><a href="https://seattlechildrens.vsyslive.com/" style="color: #3f7e9c;">13. Volunteering at Seattle Children's Hospital</a></h3>
+                <p>Seattle Children's offers volunteer roles that allow students to help support patient care and hospital operations.</p>
+                <p><b>Eligibility:</b> High school students (ages 15+). <br><b>Duration:</b> Flexible hours, typically during the summer.</p>
+            </div>
+            
+            <div class="volunteer">
+                <h3><a href="https://www.mskcc.org/about/get-involved/volunteering" style="color: #3f7e9c;">14. Volunteering at Memorial Sloan Kettering Cancer Center</a></h3>
+                <p>MSKCC offers volunteer opportunities for high school students interested in cancer research, patient care, and hospital support.</p>
+                <p><b>Eligibility:</b> High school students (ages 16+). <br><b>Duration:</b> Summer program or year-round.</p>
+            </div>
+            
+            <div class="volunteer">
+                <h3><a href="https://phoenixchildrens.org/about-us/ways-help/volunteering" style="color: #3f7e9c;">15. Volunteering at Phoenix Children's Hospital</a></h3>
+                <p>Phoenix Children's offers a variety of volunteer opportunities in patient care, administrative support, and more.</p>
+                <p><b>Eligibility:</b> High school students (ages 14+). <br><b>Duration:</b> Summer and year-round programs.</p>
+            </div>
+            
+            <div class="volunteer">
+                <h3><a href="https://www.stjude.org/get-involved/other-ways/volunteer-at-the-hospital/individual-opportunities.html" style="color: #3f7e9c;">16. Volunteering at St. Jude Children's Research Hospital</a></h3>
+                <p>St. Jude offers various volunteer roles for students interested in contributing to the mission of fighting childhood cancer.</p>
+                <p><b>Eligibility:</b> High school students (ages 16+). <br><b>Duration:</b> Flexible hours, with short-term and long-term commitments.</p>
+            </div>
+            
+            <div class="volunteer">
+                <h3><a href="https://www.uchicagomedicine.org/give/volunteer/volunteer-ingalls-memorial" style="color: #3f7e9c;">17. Volunteering at Ingalls Memorial Hospital</a></h3>
+                <p>Ingalls Memorial offers volunteer roles for students to help in patient care, research, and hospital support.</p>
+                <p><b>Eligibility:</b> High school students (ages 16+). <br><b>Duration:</b> Flexible, including summer and year-round.</p>
+            </div>
+            
+            <div class="volunteer">
+                <h3><a href="https://www.rchsd.org/programs-services/autism-discovery-institute/get-involved/volunteer-opportunities/" style="color: #3f7e9c;">18. Volunteering at Rady Children's Hospital</a></h3>
+                <p>Rady Children's offers volunteer roles in pediatric care, research, and administrative support.</p>
+                <p><b>Eligibility:</b> High school students (ages 15+). <br><b>Duration:</b> Flexible, typically summer.</p>
+            </div>
+            
+            <div class="volunteer">
+                <h3><a href="https://www.scripps.org/about-us/volunteer" style="color: #3f7e9c;">19. Volunteering at Scripps Health</a></h3>
+                <p>Scripps Health offers a variety of volunteer roles across its network of hospitals, clinics, and care facilities.</p>
+                <p><b>Eligibility:</b> High school students (ages 16+). <br><b>Duration:</b> Flexible hours, including summer programs.</p>
+            </div>
+            
+            <div class="volunteer">
+                <h3><a href="https://www.wakehealth.edu/about-us/volunteer-services" style="color: #3f7e9c;">20. Volunteering at Wake Forest Baptist Health</a></h3>
+                <p>Wake Forest offers a variety of volunteer roles for students in healthcare and support services.</p>
+                <p><b>Eligibility:</b> High school students (ages 15+). <br><b>Duration:</b> Flexible hours, including summer and year-round programs.</p>
+            </div>
+            <h2>Program Opportunities</h2>
+            <div class="program">
+                <h3><a href="https://zuckermaninstitute.columbia.edu/brainyac" style="color: #48966c;">1. BrainYAC at Columbia University's Zuckerman Institute</a></h3>
+                <p>The BrainYAC program offers high school students the chance to work with researchers at the Zuckerman Institute, gaining insight into neuroscience and the brain.</p>
+                <p><b>Eligibility:</b> High school students. <br><b>Duration:</b> Summer program.</p>
+            </div>
+            
+            <div class="program">
+                <h3><a href="https://www.brighamandwomens.org/about-bwh/human-resources/workforce-development/workforce-development-youth-summer-program" style="color: #48966c;">2. Youth Summer Program at Brigham and Women's Hospital</a></h3>
+                <p>This program provides high school students with an introduction to healthcare and the opportunity to gain hands-on experience in medical environments.</p>
+                <p><b>Eligibility:</b> High school students. <br><b>Duration:</b> Summer program.</p>
+            </div>
+            
+            <div class="program">
+                <h3><a href="https://universitycollege.tufts.edu/pre-college/browse/mini-med-school" style="color: #48966c;">3. Mini Med School at Tufts University</a></h3>
+                <p>Tufts' Mini Med School allows students to explore the world of medicine, offering lectures, hands-on activities, and discussions with medical professionals.</p>
+                <p><b>Eligibility:</b> High school students. <br><b>Duration:</b> Summer program.</p>
+            </div>
+            
+            <div class="program">
+                <h3><a href="https://volunteerconnection.redcross.org/?nd=vms_public_form&form_id=14978" style="color: #48966c;">4. Red Cross Volunteer Program</a></h3>
+                <p>The American Red Cross offers volunteer programs for high school students to assist with disaster response, health services, and community outreach.</p>
+                <p><b>Eligibility:</b> High school students. <br><b>Duration:</b> Flexible, summer and year-round options.</p>
+            </div>
+            
+            <div class="program">
+                <h3><a href="https://www.mcw.edu/education/pathway-programs/for-high-school-students" style="color: #48966c;">5. Pathway Programs for High School Students at Medical College of Wisconsin</a></h3>
+                <p>MCW’s Pathway Programs give students an opportunity to explore healthcare professions through lectures, activities, and networking with professionals.</p>
+                <p><b>Eligibility:</b> High school students. <br><b>Duration:</b> Summer program.</p>
+            </div>
+            
+            <div class="program">
+                <h3><a href="https://www.rchsd.org/programs-services/center-for-healthier-communities/youth-development/medical-academy/" style="color: #48966c;">6. Medical Academy at Rady Children's Hospital</a></h3>
+                <p>Rady Children's Medical Academy offers high school students the chance to learn about medical careers, research, and hands-on healthcare skills.</p>
+                <p><b>Eligibility:</b> High school students (ages 14+). <br><b>Duration:</b> Summer program.</p>
+            </div>
+            
+            <div class="program">
+                <h3><a href="https://www.nslcleaders.org/youth-leadership-programs/summer-medical-programs/" style="color: #48966c;">7. Summer Medical Programs by NSLC</a></h3>
+                <p>NSLC's Summer Medical Programs give students the opportunity to explore medicine through real-world simulations, lectures, and internships with professionals.</p>
+                <p><b>Eligibility:</b> High school students (grades 9-12). <br><b>Duration:</b> Summer program.</p>
+            </div>
+            
+            <div class="program">
+                <h3><a href="https://summer.georgetown.edu/programs/SHS19/medical-academy/" style="color: #48966c;">8. Medical Academy at Georgetown University</a></h3>
+                <p>The Medical Academy at Georgetown offers high school students a chance to experience college-level medical education and hands-on clinical work.</p>
+                <p><b>Eligibility:</b> High school students (ages 16+). <br><b>Duration:</b> Summer program.</p>
+            </div>
+            
+            <div class="program">
+                <h3><a href="https://wfuonline.precollegeprograms.org/med-programs?hsa_acc=4458224631&hsa_kw=&hsa_net=adwords&hsa_ver=3&gad_source=1&gbraid=0AAAAABqsdiYWvNA37BXkbeuBtHB8UXsuy&gclid=CjwKCAjwp4m0BhBAEiwAsdc4aJaf1xZt0YAg-Zucw8ZjBzX52RHDr14FJ7kyHeT41xiGBQ971gv05hoCrOIQAvD_BwE" style="color: #48966c;">9. Wake Forest University Pre-College Medical Programs</a></h3>
+                <p>Wake Forest’s Pre-College Medical Programs give students the opportunity to gain medical knowledge through coursework, simulations, and hands-on experiences.</p>
+                <p><b>Eligibility:</b> High school students. <br><b>Duration:</b> Summer program.</p>
+            </div>
+            
+            <div class="program">
+                <h3><a href="https://www.roswellpark.org/education/k-12-undergrad/high-school-summer-research-program" style="color: #48966c;">10. High School Summer Research Program at Roswell Park</a></h3>
+                <p>Roswell Park’s summer research program provides high school students with the opportunity to conduct cancer research and learn from professional scientists.</p>
+                <p><b>Eligibility:</b> High school students. <br><b>Duration:</b> Summer program.</p>
+            </div>
+            
+            <div class="program">
+                <h3><a href="https://summer.harvard.edu/high-school-programs/pre-college-program" style="color: #48966c;">11. Pre-College Program at Harvard University</a></h3>
+                <p>Harvard’s Pre-College Program offers high school students the opportunity to take college-level courses and explore fields like medicine, law, and business.</p>
+                <p><b>Eligibility:</b> High school students (grades 10-12). <br><b>Duration:</b> Summer program.</p>
+            </div>
+            
+            <div class="program">
+                <h3><a href="https://college.mayo.edu/academics/diversity-and-inclusion/programs/mayo-clinic-cares/how-to-apply/?utm_source=chatgpt.com" style="color: #48966c;">12. Mayo Clinic Cares Program</a></h3>
+                <p>The Mayo Clinic Cares Program provides high school students with a hands-on opportunity to explore healthcare careers at one of the leading medical institutions.</p>
+                <p><b>Eligibility:</b> High school students. <br><b>Duration:</b> Summer program.</p>
+            </div>
+            
+            <div class="program">
+                <h3><a href="https://summer.jhu.edu/programs-courses/pre-college-programs/?utm_source=chatgpt.com" style="color: #48966c;">13. Pre-College Programs at Johns Hopkins University</a></h3>
+                <p>Johns Hopkins offers high school students the opportunity to engage in medical, scientific, and technological studies through their Pre-College Programs.</p>
+                <p><b>Eligibility:</b> High school students (grades 9-12). <br><b>Duration:</b> Summer program.</p>
+            </div>
+            
+            <div class="program">
+                <h3><a href="https://news.uams.edu/2025/03/05/uams-accepting-applications-for-mash-champs-summer-programs-for-high-school-students-around-state/" style="color: #48966c;">14. MASH Champs Summer Program at UAMS</a></h3>
+                <p>The MASH Champs Program at UAMS provides high school students with opportunities to learn about medical careers through lectures, workshops, and hands-on experiences.</p>
+                <p><b>Eligibility:</b> High school students (grades 10-12). <br><b>Duration:</b> Summer program.</p>
+            </div>
+            
+            <div class="program">
+                <h3><a href="https://www.boldsummers.com/summer-programs/penn-medicine-summer-program/" style="color: #48966c;">15. Penn Medicine Summer Program</a></h3>
+                <p>Penn Medicine’s Summer Program offers high school students the opportunity to gain real-world medical experience while learning from professionals in the field.</p>
+                <p><b>Eligibility:</b> High school students. <br><b>Duration:</b> Summer program.</p>
+            </div>
+            <hr style="border: 1px solid #003f33; margin-top: 30px; margin-bottom: 30px;">
+        </section>         
+        </div>
+    </div>
+</section>
+
+<section class="section" id="business">
+    <div class="container">
+        <div class="content">
+            <h2>Business & Finance</h2>
+            <p>From finance to entrepreneurship, gain hands-on experience in corporate settings, startups, and marketing roles.</p>
+            <h2>Internship Opportunities</h2>
+            <div class="internship">
+                <h3><a href="https://www.pnnl.gov/high-school-business-internship" target="_blank" style="color: #68b0a1;">1. PNNL High School Business Internship</a></h3>
+                Pacific Northwest National Laboratory offers business internships for high school students where they can gain exposure to STEM fields and business practices. Interns will have the opportunity to work on real-world projects under the guidance of industry professionals.
+                <p><strong>Eligibility:</strong> High school students (ages 16-18)</p>
+                <p><strong>Duration:</strong> Summer (8-10 weeks)</p>
+            </div>
+            
+            <div class="internship">
+                <h3><a href="https://www.chicago.gov/city/en/depts/dhr/provdrs/emp/svcs/internships.html" target="_blank" style="color: #68b0a1;">2. City of Chicago Internship Program</a></h3>
+                The City of Chicago offers internship opportunities for high school students to work in various city departments. Interns gain valuable work experience, learn about public administration, and contribute to community development.
+                <p><strong>Eligibility:</strong> High school students (ages 16-18)</p>
+                <p><strong>Duration:</strong> Summer (8-10 weeks)</p>
+            </div>
+            
+            <div class="internship">
+                <h3><a href="https://building-u.com/opportunities/internships/" target="_blank" style="color: #68b0a1;">3. Building U Internship Program</a></h3>
+                Building U provides high school students with the chance to work on various business, engineering, and technology-related projects. This internship offers hands-on experience and mentorship in a variety of industries.
+                <p><strong>Eligibility:</strong> High school students (ages 16-18)</p>
+                <p><strong>Duration:</strong> Summer (8-10 weeks)</p>
+            </div>
+            
+            <div class="internship">
+                <h3><a href="https://kplaunch.kaiserpermanente.org/high-school-program/" target="_blank" style="color: #68b0a1;">4. Kaiser Permanente High School Program</a></h3>
+                The Kaiser Permanente High School Program offers internships where students can explore careers in healthcare and business. Interns will be exposed to healthcare administration and learn about organizational operations.
+                <p><strong>Eligibility:</strong> High school students (ages 16-18)</p>
+                <p><strong>Duration:</strong> Summer (8-10 weeks)</p>
+            </div>
+            
+            <div class="internship">
+                <h3><a href="https://www.jimersonfirm.com/about-us/careers/school-internships/#lafaq01" target="_blank" style="color: #68b0a1;">5. Jimerson & Cobb Internship Program</a></h3>
+                Jimerson & Cobb offers internship opportunities for high school students interested in business, law, and finance. Interns will assist with research, office tasks, and learn about business law in a real-world setting.
+                <p><strong>Eligibility:</strong> High school students (ages 16-18)</p>
+                <p><strong>Duration:</strong> Summer (8 weeks)</p>
+            </div>
+            
+            <div class="internship">
+                <h3><a href="https://dorotusa.org/volunteer/high-school-college-internships/summer-teen-internship-program" target="_blank" style="color: #68b0a1;">6. DOROT Summer Teen Internship Program</a></h3>
+                DOROT's Summer Teen Internship Program offers high school students the chance to work with older adults and engage in various community service projects. Students will learn about healthcare, communication, and nonprofit management.
+                <p><strong>Eligibility:</strong> High school students (ages 14-18)</p>
+                <p><strong>Duration:</strong> Summer (6-8 weeks)</p>
+            </div>
+            
+            <div class="internship">
+                <h3><a href="https://www.portseattle.org/programs/high-school-internships" target="_blank" style="color: #68b0a1;">7. Port of Seattle High School Internship</a></h3>
+                The Port of Seattle offers internship opportunities for high school students to learn about business operations in transportation, logistics, and marketing. Interns will engage in hands-on work and attend professional development seminars.
+                <p><strong>Eligibility:</strong> High school students (ages 15-18)</p>
+                <p><strong>Duration:</strong> Summer (8 weeks)</p>
+            </div>
+            
+            <div class="internship">
+                <h3><a href="https://about.bankofamerica.com/en/making-an-impact/student-leaders" target="_blank" style="color: #68b0a1;">8. Bank of America Student Leaders Program</a></h3>
+                Bank of America’s Student Leaders Program offers high school juniors and seniors the opportunity to participate in a paid internship with a local nonprofit, helping to develop leadership and business skills.
+                <p><strong>Eligibility:</strong> High school students (ages 16-18)</p>
+                <p><strong>Duration:</strong> Summer (8 weeks)</p>
+            </div>
+            
+            <div class="internship">
+                <h3><a href="https://www.emmabowenfoundation.org/apply" target="_blank" style="color: #68b0a1;">9. Emma Bowen Foundation Internship</a></h3>
+                The Emma Bowen Foundation offers high school students internships in media, marketing, and technology. Interns work with major companies to gain hands-on experience in a professional setting.
+                <p><strong>Eligibility:</strong> High school students (ages 16-18)</p>
+                <p><strong>Duration:</strong> Summer (8-10 weeks)</p>
+            </div>
+            
+            <div class="internship">
+                <h3><a href="https://careers.microsoft.com/v2/global/en/discoveryprogram" target="_blank" style="color: #68b0a1;">10. Microsoft Discovery Program</a></h3>
+                The Microsoft Discovery Program offers high school students the chance to explore careers in business, technology, and engineering. Interns will gain practical experience and learn about Microsoft’s corporate culture.
+                <p><strong>Eligibility:</strong> High school students (ages 16-18)</p>
+                <p><strong>Duration:</strong> Summer (8-10 weeks)</p>
+            </div>
+            
+            <div class="internship">
+                <h3><a href="https://trumpwhitehouse.archives.gov/get-involved/internships/" target="_blank" style="color: #68b0a1;">11. White House Internship Program</a></h3>
+                The White House Internship Program provides high school students with the opportunity to gain experience in public service, business, and government. Interns will assist in various White House departments.
+                <p><strong>Eligibility:</strong> High school students (ages 16-18)</p>
+                <p><strong>Duration:</strong> Summer (10 weeks)</p>
+            </div>
+            
+            <div class="internship">
+                <h3><a href="https://www.claconnect.com/en/careers/high-school-internship#apply" target="_blank" style="color: #68b0a1;">12. CLA High School Internship</a></h3>
+                CLA’s high school internship program allows students to explore careers in accounting, business advisory, and tax services. Interns will gain exposure to corporate environments and participate in professional development activities.
+                <p><strong>Eligibility:</strong> High school students (ages 16-18)</p>
+                <p><strong>Duration:</strong> Summer (6-8 weeks)</p>
+            </div>
+            
+            <div class="internship">
+                <h3><a href="https://careers.homedepot.com/students-internships" target="_blank" style="color: #68b0a1;">13. Home Depot Internship Program</a></h3>
+                Home Depot offers internships for high school students interested in business, retail, and marketing. Interns will work in a professional setting, learning about the operations and management of retail business.
+                <p><strong>Eligibility:</strong> High school students (ages 16-18)</p>
+                <p><strong>Duration:</strong> Summer (8-10 weeks)</p>
+            </div>
+            
+            <div class="internship">
+                <h3><a href="https://corporate.target.com/careers/career-areas/intern-entry-level" target="_blank" style="color: #68b0a1;">14. Target Internship Program</a></h3>
+                Target’s Internship Program gives high school students the opportunity to gain hands-on experience in business, marketing, and management. Interns will work with Target’s retail, supply chain, and operations teams.
+                <p><strong>Eligibility:</strong> High school students (ages 16-18)</p>
+                <p><strong>Duration:</strong> Summer (8-10 weeks)</p>
+            </div>
+            <h2>Program Opportunities</h2>
+            <div class="program">
+                <h3><a href="https://www.freedomhouse.com/programs/summer-learning-institute-sli/" style="color: #48966c;">1. Summer Learning Institute (SLI) at Freedom House</a></h3>
+                <p>The SLI program provides students with opportunities to develop leadership skills and gain insight into global human rights issues while working with professionals in the field.</p>
+                <p><b>Eligibility:</b> High school students. <br><b>Duration:</b> Summer program.</p>
+            </div>
+            
+            <div class="program">
+                <h3><a href="https://www.intelligencecareers.gov/nsa/students-and-internships" style="color: #48966c;">2. NSA Student Internships</a></h3>
+                <p>The National Security Agency offers internships for students interested in intelligence, national security, and cyber-related fields, providing hands-on experience in cutting-edge work.</p>
+                <p><b>Eligibility:</b> High school and college students. <br><b>Duration:</b> Summer program.</p>
+            </div>
+            
+            <div class="program">
+                <h3><a href="https://www.summerapply.com/school/delta-careers/uber-work-experience-program/" style="color: #48966c;">3. Uber Work Experience Program</a></h3>
+                <p>The Uber Work Experience Program allows students to gain real-world professional experience in the tech and transportation sectors, working directly with Uber teams.</p>
+                <p><b>Eligibility:</b> High school and college students. <br><b>Duration:</b> Summer program.</p>
+            </div>
+            
+            <div class="program">
+                <h3><a href="https://jausa.ja.org/programs/ja-company-program" style="color: #48966c;">4. JA Company Program</a></h3>
+                <p>Junior Achievement’s Company Program gives students the opportunity to create and run a real business, gaining invaluable entrepreneurship and teamwork experience.</p>
+                <p><b>Eligibility:</b> High school students. <br><b>Duration:</b> Year-long or summer program.</p>
+            </div>
+            
+            <div class="program">
+                <h3><a href="https://tcmet.org/?gad_source=1&gclid=Cj0KCQjw16O_BhDNARIsAC3i2GDd-OX-YkhXtO5ioDWKeNcSF84C7tQHRaSfwgpWKsMIrWi1g5pMOb0aAnjHEALw_wcB" style="color: #48966c;">5. TC MET Internship Program</a></h3>
+                <p>The TC MET Internship Program offers students the chance to work with professionals in the fields of engineering, technology, and business to gain hands-on experience.</p>
+                <p><b>Eligibility:</b> High school and college students. <br><b>Duration:</b> Summer program.</p>
+            </div>
+            
+            <div class="program">
+                <h3><a href="https://www.youngfounderslab.org/" style="color: #48966c;">6. Young Founders Lab</a></h3>
+                <p>Young Founders Lab offers students an entrepreneurial environment to develop and launch their own startups, mentored by successful entrepreneurs.</p>
+                <p><b>Eligibility:</b> High school students. <br><b>Duration:</b> Summer program.</p>
+            </div>
+            
+            <div class="program">
+                <h3><a href="https://michiganross.umich.edu/undergraduate/summer-business-academy" style="color: #48966c;">7. Summer Business Academy at Michigan Ross</a></h3>
+                <p>The Summer Business Academy at Michigan Ross provides students with the opportunity to develop key business skills and learn from top business faculty.</p>
+                <p><b>Eligibility:</b> High school students. <br><b>Duration:</b> Summer program.</p>
+            </div>
+            
+            <div class="program">
+                <h3><a href="https://precollege.brown.edu/programs/leadership-institute" style="color: #48966c;">8. Leadership Institute at Brown University</a></h3>
+                <p>Brown’s Leadership Institute focuses on teaching students how to become effective leaders through workshops, projects, and mentorship from experienced professionals.</p>
+                <p><b>Eligibility:</b> High school students (grades 9-12). <br><b>Duration:</b> Summer program.</p>
+            </div>
+            
+            <div class="program">
+                <h3><a href="https://summer.ucla.edu/program/introduction-to-investments-summer-institute/" style="color: #48966c;">9. Introduction to Investments Summer Institute at UCLA</a></h3>
+                <p>UCLA's Introduction to Investments program introduces students to the world of finance and investing, offering hands-on experiences with stock market simulations and industry experts.</p>
+                <p><b>Eligibility:</b> High school students. <br><b>Duration:</b> Summer program.</p>
+            </div>
+            
+            <div class="program">
+                <h3><a href="https://www.babson.edu/high-school-programs/" style="color: #48966c;">10. Babson College High School Programs</a></h3>
+                <p>Babson offers a variety of programs for high school students interested in entrepreneurship, business, and leadership development, providing valuable mentorship and learning experiences.</p>
+                <p><b>Eligibility:</b> High school students. <br><b>Duration:</b> Summer program.</p>
+            </div>
+            
+            <div class="program">
+                <h3><a href="https://haas.berkeley.edu/business-academy/high-school-entrepreneurship/" style="color: #48966c;">11. High School Entrepreneurship Program at Berkeley Haas</a></h3>
+                <p>Berkeley Haas offers a summer entrepreneurship program where students learn the fundamentals of starting and managing a business from top faculty members.</p>
+                <p><b>Eligibility:</b> High school students. <br><b>Duration:</b> Summer program.</p>
+            </div>
+            
+            <div class="program">
+                <h3><a href="https://www.smeal.psu.edu/diversity/business-opportunities-summer-session-boss" style="color: #48966c;">12. Business Opportunities Summer Session (BOSS) at Penn State Smeal</a></h3>
+                <p>BOSS at Penn State offers high school students exposure to business education, leadership, and diversity initiatives in an immersive summer experience.</p>
+                <p><b>Eligibility:</b> High school students. <br><b>Duration:</b> Summer program.</p>
+            </div>
+            
+            <div class="program">
+                <h3><a href="https://fte.org/students/economics-for-leaders-program/" style="color: #48966c;">13. Economics for Leaders Program by FTE</a></h3>
+                <p>FTE’s Economics for Leaders Program introduces students to economic principles and leadership concepts, preparing them for careers in business and economics.</p>
+                <p><b>Eligibility:</b> High school students. <br><b>Duration:</b> Summer program.</p>
+            </div>
+            
+            <div class="program">
+                <h3><a href="https://summer.georgetown.edu/programs/SHS10/entrepreneurship-academy/" style="color: #48966c;">14. Entrepreneurship Academy at Georgetown University</a></h3>
+                <p>Georgetown’s Entrepreneurship Academy helps students develop entrepreneurial skills through hands-on projects and mentorship from industry leaders.</p>
+                <p><b>Eligibility:</b> High school students. <br><b>Duration:</b> Summer program.</p>
+            </div>
+            
+            <div class="program">
+                <h3><a href="https://www.fordham.edu/gabelli-school-of-business/academic-programs-and-admissions/undergraduate-programs/specialty-programs/summer-business-programs/exploring-entrepreneurship/" style="color: #48966c;">15. Exploring Entrepreneurship at Fordham University</a></h3>
+                <p>Fordham's Exploring Entrepreneurship program teaches students the fundamentals of starting a business, with real-world insights and challenges from the entrepreneurial community.</p>
+                <p><b>Eligibility:</b> High school students. <br><b>Duration:</b> Summer program.</p>
+            </div>
+            
+            <div class="program">
+                <h3><a href="https://globalyouth.wharton.upenn.edu/" style="color: #48966c;">16. Wharton Global Youth Program</a></h3>
+                <p>Wharton’s Global Youth Program offers high school students a chance to explore business education through various immersive programs and hands-on experiences.</p>
+                <p><b>Eligibility:</b> High school students. <br><b>Duration:</b> Summer program.</p>
+            </div>
+            
+            <div class="program">
+                <h3><a href="https://precollege.barnard.edu/nextgen-leadership-institute" style="color: #48966c;">17. NextGen Leadership Institute at Barnard College</a></h3>
+                <p>The NextGen Leadership Institute focuses on developing leadership skills in high school students, helping them navigate academic and professional environments.</p>
+                <p><b>Eligibility:</b> High school students. <br><b>Duration:</b> Summer program.</p>
+            </div>
+            
+            <div class="program">
+                <h3><a href="https://precollege.usc.edu/summer-programs/exploring-entrepreneurship/" style="color: #48966c;">18. Exploring Entrepreneurship at USC</a></h3>
+                <p>USC’s Exploring Entrepreneurship program introduces high school students to the world of entrepreneurship, providing them with the skills to start their own ventures.</p>
+                <p><b>Eligibility:</b> High school students. <br><b>Duration:</b> Summer program.</p>
+            </div>
+            
+            <div class="program">
+                <h3><a href="https://www.marist.edu/admission/pre-college/business" style="color: #48966c;">19. Pre-College Business Program at Marist College</a></h3>
+                <p>Marist College’s Pre-College Business Program offers high school students the chance to explore business and leadership through case studies, teamwork, and internships.</p>
+                <p><b>Eligibility:</b> High school students. <br><b>Duration:</b> Summer program.</p>
+            </div>
+            
+            <div class="program">
+                <h3><a href="https://www.rhsmith.umd.edu/centers-initiatives/snider-center/programs-curricula/self" style="color: #48966c;">20. Self-Development & Entrepreneurship Program at UMD Smith</a></h3>
+                <p>UMD's Self-Development & Entrepreneurship Program provides students with the tools to become entrepreneurial leaders in today’s rapidly changing world.</p>
+                <p><b>Eligibility:</b> High school students. <br><b>Duration:</b> Summer program.</p>
+            </div>
+            
+            <div class="program">
+                <h3><a href="https://www.terry.uga.edu/about/inclusive-excellence/accelerated-business-program/" style="color: #48966c;">21. Accelerated Business Program at UGA Terry College</a></h3>
+                <p>The Accelerated Business Program at UGA offers high school students the chance to engage in business coursework, workshops, and career-focused experiences.</p>
+                <p><b>Eligibility:</b> High school students. <br><b>Duration:</b> Summer program.</p>
+            </div>
+            
+            <div class="program">
+                <h3><a href="https://www.hbs.edu/mba/admissions/college-students/svmp" style="color: #48966c;">22. SVMP at Harvard Business School</a></h3>
+                <p>The Summer Venture in Management Program (SVMP) provides high-potential students from underrepresented backgrounds the opportunity to explore the world of business and management at Harvard.</p>
+                <p><b>Eligibility:</b> Undergraduate students. <br><b>Duration:</b> Summer program.</p>
+            </div>
+            
+            <div class="program">
+                <h3><a href="https://universitycollege.tufts.edu/pre-college/browse/entrepreneurship-innovation-bootcamp" style="color: #48966c;">23. Entrepreneurship & Innovation Bootcamp at Tufts University</a></h3>
+                <p>Tufts' Entrepreneurship & Innovation Bootcamp introduces high school students to the principles of innovation and entrepreneurship, fostering a hands-on learning environment.</p>
+                <p><b>Eligibility:</b> High school students. <br><b>Duration:</b> Summer program.</p>
+            </div>
+            
+            <div class="program">
+                <h3><a href="https://business.ku.edu/undergraduate-programs/summer-venture-business" style="color: #48966c;">24. Summer Venture Business Program at University of Kansas</a></h3>
+                <p>The Summer Venture Business Program at KU provides students the opportunity to develop entrepreneurial ideas and gain practical business experience.</p>
+                <p><b>Eligibility:</b> High school students. <br><b>Duration:</b> Summer program.</p>
+            </div>
+            <hr style="border: 1px solid #003f33; margin-top: 30px; margin-bottom: 30px;">
+        </section>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="research">
+    <div class="container">
+        <div class="content">
+            <h2>Research & Innovation</h2>
+            <p>Engage in groundbreaking research projects in STEM, social sciences, and emerging technologies.</p>
+            <section id="research" class="category-section">
+                <section id="research" class="category-section">
+                    <h2>Internship Opportunities</h2>
+                    <div class="internship">
+                        <h3><a href="https://www.scripps.edu/science-and-medicine/translational-institute/education-and-training/student-research-internship/index.html" target="_blank" style="color: #68b0a1;">1. Scripps Research Internship Program</a></h3>
+                        This program allows students to work with scientists on cutting-edge biomedical research in various fields including genetics, cancer, and neuroscience.
+                        <p><strong>Eligibility:</strong> High school students (typically rising juniors and seniors)</p>
+                        <p><strong>Duration:</strong> Summer (typically 8-10 weeks)</p>
+                    </div>
+        
+                    <!-- Internship 2 -->
+                    <div class="internship">
+                        <h3><a href="https://btiscience.org/education-outreach/high-school-research-internships/apply-for-high-school-research-internships/" target="_blank" style="color: #68b0a1;">2. BTI High School Research Internships</a></h3>
+                        Students work alongside scientists at the Boyce Thompson Institute on plant research related to environmental and agricultural challenges.
+                        <p><strong>Eligibility:</strong> High school students in grades 10-12</p>
+                        <p><strong>Duration:</strong> Summer (8-10 weeks)</p>
+                    </div>
+        
+                    <!-- Internship 3 -->
+                    <div class="internship">
+                        <h3><a href="https://www.cee.org/programs/research-science-institute" target="_blank" style="color: #68b0a1;">3. Research Science Institute (RSI) by CEE</a></h3>
+                        RSI is a highly selective summer research program at MIT where students conduct cutting-edge scientific research in various disciplines.
+                        <p><strong>Eligibility:</strong> High school juniors (typically age 16-17)</p>
+                        <p><strong>Duration:</strong> 6 weeks at MIT during the summer</p>
+                    </div>
+        
+                    <!-- Internship 4 -->
+                    <div class="internship">
+                        <h3><a href="https://www.usaeop.com/program/high-school-internships/" target="_blank" style="color: #68b0a1;">4. USA Science & Engineering Festival High School Internships</a></h3>
+                        The festival offers internships that expose students to science and engineering professionals, as well as opportunities to develop science communication skills.
+                        <p><strong>Eligibility:</strong> High school students, ages 16+</p>
+                        <p><strong>Duration:</strong> Summer (typically 8-10 weeks)</p>
+                    </div>
+        
+                    <!-- Internship 5 -->
+                    <div class="internship">
+                        <h3><a href="https://internships.fnal.gov/" target="_blank" style="color: #68b0a1;">5. Fermilab National Laboratory Internships</a></h3>
+                        Fermilab offers internships to high school students interested in physics, engineering, and computer science, allowing students to work with world-class researchers.
+                        <p><strong>Eligibility:</strong> High school students (ages 16-18)</p>
+                        <p><strong>Duration:</strong> Summer (typically 8-10 weeks)</p>
+                    </div>
+        
+                    <!-- Internship 6 -->
+                    <div class="internship">
+                        <h3><a href="https://www.niehs.nih.gov/careers/research/summers" target="_blank" style="color: #68b0a1;">6. NIEHS Summer Internship Program</a></h3>
+                        This program provides students with hands-on research experience in environmental health sciences at the National Institute of Environmental Health Sciences.
+                        <p><strong>Eligibility:</strong> High school students (ages 16+)</p>
+                        <p><strong>Duration:</strong> Summer (typically 10-12 weeks)</p>
+                    </div>
+        
+                    <!-- Internship 7 -->
+                    <div class="internship">
+                        <h3><a href="https://apply.interfolio.com/161560" target="_blank" style="color: #68b0a1;">7. Interfolio Research Internships</a></h3>
+                        Interfolio offers high school internships in various research fields, such as data science and engineering, to help students gain real-world experience.
+                        <p><strong>Eligibility:</strong> High school students (ages 16-18)</p>
+                        <p><strong>Duration:</strong> Flexible (usually summer)</p>
+                    </div>
+        
+                    <!-- Internship 8 -->
+                    <div class="internship">
+                        <h3><a href="https://internships.si.edu/opportunities" target="_blank" style="color: #68b0a1;">8. Smithsonian Institution Internships</a></h3>
+                        Smithsonian offers internships that provide students the opportunity to work with experts in various fields including science, history, and culture.
+                        <p><strong>Eligibility:</strong> High school students (ages 16+)</p>
+                        <p><strong>Duration:</strong> Summer (typically 8-10 weeks)</p>
+                    </div>
+        
+                    <!-- Internship 9 -->
+                    <div class="internship">
+                        <h3><a href="https://www.research.chop.edu/crissp/program-details" target="_blank" style="color: #68b0a1;">9. CHOP CRISSP Program</a></h3>
+                        The Children’s Hospital of Philadelphia offers high school students the opportunity to participate in pediatric clinical and laboratory research.
+                        <p><strong>Eligibility:</strong> High school students (ages 16-18)</p>
+                        <p><strong>Duration:</strong> Summer (typically 8-10 weeks)</p>
+                    </div>
+        
+                    <!-- Internship 10 -->
+                    <div class="internship">
+                        <h3><a href="https://my.clevelandclinic.org/departments/education/center-for-youth-and-college-education/internships" target="_blank" style="color: #68b0a1;">10. Cleveland Clinic Internship Program</a></h3>
+                        This internship allows high school students to work on medical and scientific research projects, providing insight into healthcare and medical research.
+                        <p><strong>Eligibility:</strong> High school students (ages 16+)</p>
+                        <p><strong>Duration:</strong> Summer (typically 8-10 weeks)</p>
+                    </div>
+        
+                    <!-- Internship 11 -->
+                    <div class="internship">
+                        <h3><a href="https://www.calacademy.org/careers-in-science-cis-intern-program" target="_blank" style="color: #68b0a1;">11. California Academy of Sciences CIS Intern Program</a></h3>
+                        Students gain experience in scientific research and conservation, working alongside professional scientists at the California Academy of Sciences.
+                        <p><strong>Eligibility:</strong> High school students (ages 16+)</p>
+                        <p><strong>Duration:</strong> Summer (typically 8-10 weeks)</p>
+                    </div>
+        
+                    <!-- Internship 12 -->
+                    <div class="internship">
+                        <h3><a href="https://sip.ucsc.edu/" target="_blank" style="color: #68b0a1;">12. UCSC Science Internship Program (SIP)</a></h3>
+                        UCSC SIP provides students the opportunity to engage in scientific research in various fields, such as biology, physics, and environmental science.
+                        <p><strong>Eligibility:</strong> High school students (ages 16+)</p>
+                        <p><strong>Duration:</strong> Summer (typically 8-10 weeks)</p>
+                    </div>
+        
+                    <!-- Internship 13 -->
+                    <div class="internship">
+                        <h3><a href="https://www.sandia.gov/careers/career-possibilities-clone-2/students-and-postdocs/internships-co-ops/" target="_blank" style="color: #68b0a1;">13. Sandia National Laboratories Internship Program</a></h3>
+                        Interns work on research projects in energy, national security, and engineering, gaining exposure to cutting-edge research in a national lab setting.
+                        <p><strong>Eligibility:</strong> High school students (ages 16-18)</p>
+                        <p><strong>Duration:</strong> Summer (typically 8-10 weeks)</p>
+                    </div>
+        
+                    <!-- Internship 14 -->
+                    <div class="internship">
+                        <h3><a href="https://sep.ucsf.edu/programs/high-school-students/intern-program/" target="_blank" style="color: #68b0a1;">14. UCSF High School Research Internship Program</a></h3>
+                        The UCSF internship provides students with the opportunity to work on medical research projects in cancer, immunology, and other health-related topics.
+                        <p><strong>Eligibility:</strong> High school students (ages 16+)</p>
+                        <p><strong>Duration:</strong> Summer (typically 8-10 weeks)</p>
+                    </div>
+        
+                    <!-- Internship 15 -->
+                    <div class="internship">
+                        <h3><a href="https://www.jax.org/education-and-learning/high-school-students-and-undergraduates/academic-year-internships" target="_blank" style="color: #68b0a1;">15. The Jackson Laboratory Internship Program</a></h3>
+                        The Jackson Laboratory offers internships to high school students interested in genetic, molecular, and biomedical research.
+                        <p><strong>Eligibility:</strong> High school students (ages 16+)</p>
+                        <p><strong>Duration:</strong> Summer (typically 8-10 weeks)</p>
+                    </div>
+        
+                    <!-- Internship 16 -->
+                    <div class="internship">
+                        <h3><a href="https://medicine.yale.edu/obgyn/discovery/education/internships/hs/" target="_blank" style="color: #68b0a1;">16. Yale OB/GYN Discovery Program</a></h3>
+                        This internship provides students the opportunity to engage in research on reproductive medicine and health at Yale University.
+                        <p><strong>Eligibility:</strong> High school students (ages 16+)</p>
+                        <p><strong>Duration:</strong> Summer (typically 8-10 weeks)</p>
+                    </div>
+        
+                    <!-- Internship 17 -->
+                    <div class="internship">
+                        <h3><a href="https://scazlab.yale.edu/prospective-students/prospective-high-school-interns" target="_blank" style="color: #68b0a1;">17. SCaz Lab at Yale University</a></h3>
+                        The SCaz Lab at Yale offers internships to students interested in molecular genetics research.
+                        <p><strong>Eligibility:</strong> High school students (ages 16-18)</p>
+                        <p><strong>Duration:</strong> Summer (typically 8-10 weeks)</p>
+                    </div>
+        
+                    <!-- Internship 18 -->
+                    <div class="internship">
+                        <h3><a href="https://www.uchicagomedicine.org/cancer/education-outreach/student-education/high-school-undergraduate/eyes" target="_blank" style="color: #68b0a1;">18. University of Chicago Medicine Eyes Program</a></h3>
+                        This program offers internships for students to engage in cancer, immunology, and medical education research.
+                        <p><strong>Eligibility:</strong> High school students (ages 16+)</p>
+                        <p><strong>Duration:</strong> Summer (typically 8-10 weeks)</p>
+                    </div>
+        
+                    <!-- Internship 19 -->
+                    <div class="internship">
+                        <h3><a href="https://edwardscampus.ku.edu/biotech-research-apprentice-program" target="_blank" style="color: #68b0a1;">19. University of Kansas Biotech Research Apprentice Program</a></h3>
+                        This internship provides students with hands-on experience in biotechnology research, including genetics and chemistry.
+                        <p><strong>Eligibility:</strong> High school students (ages 16-18)</p>
+                        <p><strong>Duration:</strong> Summer (typically 8-10 weeks)</p>
+                    </div>
+        
+                    <!-- Internship 20 -->
+                    <div class="internship">
+                        <h3><a href="https://www.coriell.org/1/About-Us/Education/Summer-Experience" target="_blank" style="color: #68b0a1;">20. Coriell Institute Summer Experience Program</a></h3>
+                        The Coriell Institute offers a summer internship program for high school students interested in genetics and biomedical research.
+                        <p><strong>Eligibility:</strong> High school students (ages 16-18)</p>
+                        <p><strong>Duration:</strong> Summer (typically 8-10 weeks)</p>
+                    </div>
+        
+                    <!-- Internship 21 -->
+                    <div class="internship">
+                        <h3><a href="https://www.pnnl.gov/high-school-research-internship" target="_blank" style="color: #68b0a1;">21. PNNL High School Research Internship Program</a></h3>
+                        PNNL offers high school internships in research areas such as environmental science, energy, and materials science.
+                        <p><strong>Eligibility:</strong> High school students (ages 16-18)</p>
+                        <p><strong>Duration:</strong> Summer (typically 8-10 weeks)</p>
+                    </div>
+                </section>
+                <h2>Volunteer Opportunities</h2>
+                <div class="volunteer">
+                    <h3><a href="https://serc.si.edu/volunteer" target="_blank" style="color: #3f7e9c;">1. Smithsonian Environmental Research Center (SERC) Volunteer Program</a></h3>
+                    The Smithsonian Environmental Research Center offers volunteer opportunities where individuals can engage in fieldwork and research focused on environmental science. Volunteers assist with ongoing research projects in ecology, conservation, and environmental monitoring. It's a great way for volunteers to gain hands-on experience and contribute to meaningful environmental studies.
+                    <p><strong>Eligibility:</strong> Open to volunteers of all ages.</p>
+                    <p><strong>Duration:</strong> Flexible</p>
+                </div>
+    
+                <!-- Volunteer 2 -->
+                <div class="volunteer">
+                    <h3><a href="https://www.noaa.gov/work-with-us/volunteer-opportunities-citizen-scientists" target="_blank" style="color: #3f7e9c;">2. NOAA Citizen Science Volunteer Opportunities</a></h3>
+                    NOAA (National Oceanic and Atmospheric Administration) provides opportunities for volunteers to get involved in scientific research through citizen science. Volunteers help gather data on weather, climate, and marine life while supporting NOAA’s mission of protecting natural resources. It’s an opportunity to make an impact while working on critical environmental issues.
+                    <p><strong>Eligibility:</strong> Open to volunteers of all ages, depending on the project.</p>
+                    <p><strong>Duration:</strong> Flexible</p>
+                </div>
+    
+                <!-- Volunteer 3 -->
+                <div class="volunteer">
+                    <h3><a href="https://www.birds.cornell.edu/home/visit/volunteers/" target="_blank" style="color: #3f7e9c;">3. Cornell Lab of Ornithology Volunteer Program</a></h3>
+                    The Cornell Lab of Ornithology offers volunteer opportunities for bird enthusiasts to engage in scientific research. Volunteers can contribute to projects related to bird conservation, behavior, and migration tracking. This program offers a unique chance to gain experience in wildlife research while contributing to global conservation efforts.
+                    <p><strong>Eligibility:</strong> Open to volunteers 18+ for fieldwork and research projects.</p>
+                    <p><strong>Duration:</strong> Flexible</p>
+                </div>
+    
+                <!-- Volunteer 4 -->
+                <div class="volunteer">
+                    <h3><a href="https://www.sierraclub.org/volunteer" target="_blank" style="color: #3f7e9c;">4. Sierra Club Volunteer Program</a></h3>
+                    The Sierra Club offers volunteer opportunities for individuals interested in environmental protection, conservation, and activism. Volunteers engage in a variety of activities, from helping with environmental education programs to participating in field research. It’s an excellent way to get involved in the environmental movement and gain practical experience.
+                    <p><strong>Eligibility:</strong> Open to volunteers of all ages.</p>
+                    <p><strong>Duration:</strong> Flexible</p>
+                </div>
+    
+                <!-- Volunteer 5 -->
+                <div class="volunteer">
+                    <h3><a href="https://www.nasa.gov/centers-and-facilities/langley/student-volunteer-program/" target="_blank" style="color: #3f7e9c;">5. NASA Langley Student Volunteer Program</a></h3>
+                    NASA Langley’s Student Volunteer Program provides high school and college students with the opportunity to assist with research in aerospace, engineering, and space science. Volunteers work alongside NASA scientists, engineers, and researchers on groundbreaking projects. This program offers an unparalleled chance to gain exposure to NASA’s space and research missions.
+                    <p><strong>Eligibility:</strong> Open to high school and college students (ages 16+).</p>
+                    <p><strong>Duration:</strong> Flexible</p>
+                </div>
+    
+                <!-- Volunteer 6 -->
+                <div class="volunteer">
+                    <h3><a href="https://www.zooniverse.org/get-involved/volunteer" target="_blank" style="color: #3f7e9c;">6. Zooniverse Volunteer Program</a></h3>
+                    Zooniverse is a platform where volunteers can participate in a variety of citizen science projects. Volunteers help researchers analyze data for scientific studies, from astronomy to biology and climate research. This program allows anyone to contribute to scientific discoveries from the comfort of their own home.
+                    <p><strong>Eligibility:</strong> Open to volunteers of all ages.</p>
+                    <p><strong>Duration:</strong> Flexible</p>
+                </div>
+    
+                <!-- Volunteer 7 -->
+                <div class="volunteer">
+                    <h3><a href="https://www.aps.org/about/volunteer" target="_blank" style="color: #3f7e9c;">7. American Physical Society Volunteer Program</a></h3>
+                    The American Physical Society (APS) offers volunteer opportunities for individuals interested in physics. Volunteers can participate in activities such as assisting with conferences, outreach, and educational initiatives. This program provides exposure to the physics community and an opportunity to support various APS events and projects.
+                    <p><strong>Eligibility:</strong> Open to volunteers of all ages.</p>
+                    <p><strong>Duration:</strong> Flexible</p>
+                </div>
+    
+                <!-- Volunteer 8 -->
+                <div class="volunteer">
+                    <h3><a href="https://www.reef.org/programs/volunteer-fish-survey-project" target="_blank" style="color: #3f7e9c;">8. Reefwatch Volunteer Fish Survey Project</a></h3>
+                    Reefwatch offers a volunteer opportunity for individuals to help monitor and survey fish populations around coral reefs. Volunteers contribute to ongoing research that helps to protect and manage marine ecosystems. It’s a great opportunity to get hands-on experience in marine biology and conservation efforts.
+                    <p><strong>Eligibility:</strong> Open to volunteers with a background in marine biology or a passion for conservation.</p>
+                    <p><strong>Duration:</strong> Flexible</p>
+                </div>
+    
+                <!-- Volunteer 9 -->
+                <div class="volunteer">
+                    <h3><a href="https://scistarter.org/" target="_blank" style="color: #3f7e9c;">9. SciStarter Citizen Science Volunteer Opportunities</a></h3>
+                    SciStarter connects volunteers with various citizen science projects in fields like environmental science, public health, and biology. Volunteers can participate in online or in-person research activities, contributing data to scientific studies across a wide range of disciplines. It’s a flexible and engaging way to support research efforts.
+                    <p><strong>Eligibility:</strong> Open to volunteers of all ages.</p>
+                    <p><strong>Duration:</strong> Flexible</p>
+                </div>
+    
+                <!-- Volunteer 10 -->
+                <div class="volunteer">
+                    <h3><a href="https://www.mos.org/careers/volunteer" target="_blank" style="color: #3f7e9c;">10. Museum of Science, Boston Volunteer Program</a></h3>
+                    The Museum of Science in Boston offers a variety of volunteer opportunities for individuals interested in science education and public engagement. Volunteers can assist with exhibits, programs, and educational outreach activities. This program provides experience in science communication while helping to inspire others about STEM fields.
+                    <p><strong>Eligibility:</strong> Open to volunteers of all ages.</p>
+                    <p><strong>Duration:</strong> Flexible</p>
+                </div>
+            </section>
+            <h2>Program Opportunities</h2>
+            <div>
+                <h3><a href="https://biosciences.stanford.edu/pathways/ssrp-amgen-scholars-program/" style="color: #48966c; text-decoration: underline;">1. SSRP-Amgen Scholars Program at Stanford</a></h3>
+                <p>The SSRP-Amgen Scholars Program at Stanford provides high school students with the opportunity to work in state-of-the-art laboratories. Students gain exposure to cutting-edge research in biosciences, working alongside faculty, postdoctoral researchers, and graduate students. This prestigious program also offers seminars and career development opportunities in the biosciences field.</p>
+                <p><strong>Eligibility:</strong> High school students in their junior or senior year, with a strong interest in biosciences.</p>
+                <p><strong>Duration:</strong> 8 weeks</p>
+              </div>
+              
+              <div>
+                <h3><a href="https://sparksmp.org/" style="color: #48966c; text-decoration: underline;">2. Sparks Mentorship Program (SMP)</a></h3>
+                <p>The Sparks Mentorship Program provides high school students with the chance to connect with professionals in various STEM fields. Students receive mentorship and support to explore academic and career opportunities in science and engineering. The program encourages skill development and networking within STEM careers.</p>
+                <p><strong>Eligibility:</strong> Open to high school students interested in mentorship within STEM fields.</p>
+                <p><strong>Duration:</strong> Flexible, with a minimum of 6 months</p>
+              </div>
+              
+              <div>
+                <h3><a href="https://www.veritasai.com/" style="color: #48966c; text-decoration: underline;">3. Veritas AI Internship Program</a></h3>
+                <p>Veritas AI offers internships for students interested in artificial intelligence and data science. The program focuses on mentorship and hands-on experience with AI research and machine learning projects. Interns gain insight into the latest AI technologies and their real-world applications.</p>
+                <p><strong>Eligibility:</strong> Open to high school students with an interest in AI and data science.</p>
+                <p><strong>Duration:</strong> 8-10 weeks</p>
+              </div>
+              
+              <div>
+                <h3><a href="https://www.cee.org/programs/apply-rsi" style="color: #48966c; text-decoration: underline;">4. Research Science Institute (RSI) by CEE</a></h3>
+                <p>RSI is an intensive summer program that pairs high school students with mentors from top research universities to conduct scientific research. The program is one of the most competitive and prestigious of its kind, offering hands-on experience in various scientific fields, including physics, engineering, and biomedical research. RSI also provides seminars, lectures, and college admissions guidance.</p>
+                <p><strong>Eligibility:</strong> Open to high school juniors with strong academic records and an interest in scientific research.</p>
+                <p><strong>Duration:</strong> 6 weeks</p>
+              </div>
+              
+              <div>
+                <h3><a href="https://k12stem.engineering.nyu.edu/programs/arise" style="color: #48966c; text-decoration: underline;">5. ARISE Program at NYU</a></h3>
+                <p>The ARISE program at NYU offers high school students a chance to engage in research in engineering and computer science. Students work alongside NYU faculty and researchers on hands-on projects, gaining valuable experience and learning about STEM fields. The program includes exposure to academic life and preparation for future STEM studies.</p>
+                <p><strong>Eligibility:</strong> Open to high school students interested in engineering or computer science.</p>
+                <p><strong>Duration:</strong> 4 weeks</p>
+              </div>
+              
+              <div>
+                <h3><a href="https://www.stonybrook.edu/simons/" style="color: #48966c; text-decoration: underline;">6. Simons Summer Research Program at Stony Brook University</a></h3>
+                <p>The Simons Summer Research Program allows high school students to engage in scientific research projects under the guidance of faculty mentors. Participants work in labs on a variety of research topics, including physics, biology, and chemistry. The program is designed to help students deepen their research skills and prepare for college-level studies.</p>
+                <p><strong>Eligibility:</strong> Open to high school juniors and seniors.</p>
+                <p><strong>Duration:</strong> 8 weeks</p>
+              </div>
+              
+              <div>
+                <h3><a href="https://simr.stanford.edu/" style="color: #48966c; text-decoration: underline;">7. Stanford Summer Internship in Research (SIMR)</a></h3>
+                <p>Stanford’s SIMR program offers high school students the opportunity to conduct research in biological, chemical, and physical sciences. Interns work in labs at Stanford and are mentored by faculty and graduate students. The program is designed to provide real-world research experience and foster a deeper interest in STEM careers.</p>
+                <p><strong>Eligibility:</strong> Open to high school students entering their senior year.</p>
+                <p><strong>Duration:</strong> 8 weeks</p>
+              </div>
+              
+              <div>
+                <h3><a href="https://www.fredhutch.org/en/education-training/high-school-students/summer-high-school-internship-program.html" style="color: #48966c; text-decoration: underline;">8. Fred Hutchinson Cancer Research Center High School Internship Program</a></h3>
+                <p>Fred Hutch offers a summer internship for high school students to engage in biomedical research in cancer, immunology, and related fields. Interns work closely with researchers, helping to advance knowledge in cancer treatment and prevention. The program also provides career development workshops and seminars on the scientific process.</p>
+                <p><strong>Eligibility:</strong> Open to high school students with an interest in biomedical research.</p>
+                <p><strong>Duration:</strong> 8-10 weeks</p>
+              </div>
+              
+              <div>
+                <h3><a href="https://www.imgs-coh.edu/summer-student-academy/summer-student-academy-how-to-apply" style="color: #48966c; text-decoration: underline;">9. IMGS Summer Student Academy</a></h3>
+                <p>The IMGS Summer Student Academy provides an opportunity for high school students to engage in advanced research in molecular biology and genetics. Students work with scientists and gain hands-on experience while participating in lectures and lab work. The program is designed to prepare students for future careers in scientific research.</p>
+                <p><strong>Eligibility:</strong> Open to high school students with an interest in molecular biology and genetics.</p>
+                <p><strong>Duration:</strong> 6 weeks</p>
+              </div>
+              
+              <div>
+                <h3><a href="Academic Connections at UC San Diego" style="color: #48966c; text-decoration: underline;">10. Academic Connections at UC San Diego</a></h3>
+                <p>The Academic Connections program at UC San Diego offers high school students the opportunity to take college-level courses and participate in research projects. Students get the chance to experience academic life at a prestigious university and work on real-world research projects. The program also includes college preparation seminars and campus tours.</p>
+                <p><strong>Eligibility:</strong> Open to high school students who are academically inclined.</p>
+                <p><strong>Duration:</strong> 4 weeks</p>
+              </div>
+              
+              <div>
+                <h3><a href="https://bioresearchacademy.com/" style="color: #48966c; text-decoration: underline;">11. BioResearch Academy</a></h3>
+                <p>The BioResearch Academy offers high school students the chance to gain hands-on experience in biological research. Students work on innovative projects and participate in lab work that spans across various fields of biology and health sciences. The program is designed to provide aspiring scientists with a deep dive into the world of research and academia.</p>
+                <p><strong>Eligibility:</strong> Open to high school students with an interest in biological sciences.</p>
+                <p><strong>Duration:</strong> 6 weeks</p>
+              </div>
+              
+              <div>
+                <h3><a href="https://medschool.vanderbilt.edu/imsd/high-school-summer-program/" style="color: #48966c; text-decoration: underline;">12. IMSD High School Summer Program at Vanderbilt University</a></h3>
+                <p>The IMSD High School Summer Program provides students with an opportunity to engage in biomedical research while receiving mentorship from faculty and researchers at Vanderbilt University. Participants work on projects related to health, medicine, and other related fields. The program also includes career development seminars and exposure to various biomedical career paths.</p>
+                <p><strong>Eligibility:</strong> Open to rising high school juniors and seniors with an interest in biomedical research.</p>
+                <p><strong>Duration:</strong> 6 weeks</p>
+              </div>
+              
+              <div>
+                <h3><a href="https://www.wistar.org/education-training/high-school-program-biomedical-research/" style="color: #48966c; text-decoration: underline;">13. Wistar Institute Biomedical Research Program</a></h3>
+                <p>The Wistar Institute offers a high school program focused on biomedical research, where students work in cutting-edge labs exploring cancer, immunology, and vaccine research. Students participate in research projects alongside scientists and gain exposure to scientific techniques and data analysis. This program is an excellent opportunity for students interested in pursuing a career in biomedical research.</p>
+                <p><strong>Eligibility:</strong> Open to high school juniors and seniors.</p>
+                <p><strong>Duration:</strong> 8 weeks</p>
+              </div>
+              
+              <div>
+                <h3><a href="https://www.acs.org/education/students/highschool/seed.html" style="color: #48966c; text-decoration: underline;">14. SEED High School Program by the American Chemical Society</a></h3>
+                <p>The SEED (Science Education for Diversity) program connects high school students with mentors in chemistry-related fields to explore scientific careers and gain hands-on research experience. Students work on lab-based projects, attend scientific seminars, and engage with professionals in the field. The program encourages diversity and aims to broaden access to scientific careers for underrepresented groups.</p>
+                <p><strong>Eligibility:</strong> Open to high school students, especially those from underrepresented backgrounds.</p>
+                <p><strong>Duration:</strong> 6 weeks</p>
+              </div>
+              
+              <div>
+                <h3><a href="https://www.citytech.cuny.edu/collegenow/stem-research-academy.aspx" style="color: #48966c; text-decoration: underline;">15. City Tech STEM Research Academy</a></h3>
+                <p>The City Tech STEM Research Academy offers high school students an opportunity to engage in research projects and academic coursework in various STEM fields. The program is designed to help students develop critical thinking and problem-solving skills while preparing them for future college studies and careers in STEM.</p>
+                <p><strong>Eligibility:</strong> Open to high school students interested in STEM fields.</p>
+                <p><strong>Duration:</strong> 5 weeks</p>
+              </div>
+              
+              <div>
+                <h3><a href="https://www.lle.rochester.edu/education/summer-research-program-for-high-school-juniors/" style="color: #48966c; text-decoration: underline;">16. LLE Rochester Summer Research Program</a></h3>
+                <p>The LLE (Laboratory for Laser Energetics) Summer Research Program at the University of Rochester offers high school students the chance to work on projects related to physics and engineering, particularly in the field of laser science. Students gain hands-on experience in research labs while being mentored by university scientists. The program helps students develop a deeper understanding of physics and engineering concepts.</p>
+                <p><strong>Eligibility:</strong> Open to high school juniors with a strong interest in physics and engineering.</p>
+                <p><strong>Duration:</strong> 6 weeks</p>
+              </div>
+              
+              <div>
+                <h3><a href="https://med.psu.edu/high-school-internships-observation" style="color: #48966c; text-decoration: underline;">17. High School Internships in Observation at Penn State University</a></h3>
+                <p>Penn State University offers high school students the chance to participate in observational internships in a variety of disciplines, particularly in the sciences. Students gain exposure to the research process by observing university professors and researchers in action. The program helps students better understand academic research while fostering an interest in scientific careers.</p>
+                <p><strong>Eligibility:</strong> Open to high school students with an interest in science and research.</p>
+                <p><strong>Duration:</strong> 6 weeks</p>
+              </div>
+              
+              <div>
+                <h3><a href="https://www.foxchase.org/research-training/education/research/high-school/immersion-science-program/research#tab-5751" style="color: #48966c; text-decoration: underline;">18. Fox Chase Immersion Science Program</a></h3>
+                <p>The Fox Chase Immersion Science Program offers high school students the chance to engage in scientific research in cancer biology, immunology, and other medical research fields. Students work alongside professionals in research labs and gain practical experience in data collection and analysis. This program provides an excellent opportunity for students interested in pursuing a career in medical research.</p>
+                <p><strong>Eligibility:</strong> Open to high school students interested in medical research.</p>
+                <p><strong>Duration:</strong> 8 weeks</p>
+              </div>
+              
+              <div>
+                <h3><a href="https://aresty.rutgers.edu/resources/research-opportunities-high-school-students" style="color: #48966c; text-decoration: underline;">19. Aresty Research Center High School Opportunities</a></h3>
+                <p>The Aresty Research Center at Rutgers University offers high school students the opportunity to participate in research projects across various academic fields. Students work with faculty and researchers, gaining experience in conducting research and analyzing data. The program provides insight into university-level research and prepares students for future academic pursuits.</p>
+                <p><strong>Eligibility:</strong> Open to high school students with an interest in academic research.</p>
+                <p><strong>Duration:</strong> 6 weeks</p>
+              </div>
+              
+              <div>
+                <h3><a href="https://education.ucdavis.edu/young-scholars-program" style="color: #48966c; text-decoration: underline;">20. Young Scholars Program at UC Davis</a></h3>
+                <p>The Young Scholars Program at UC Davis offers high school students a unique opportunity to conduct research in various scientific disciplines, including biology, chemistry, and environmental sciences. Students are paired with mentors to design and carry out their research projects, gaining valuable experience and skills. The program also includes field trips, workshops, and seminars on research methodology.</p>
+                <p><strong>Eligibility:</strong> Open to high school students with a strong interest in research and science.</p>
+                <p><strong>Duration:</strong> 6 weeks</p>
+              </div>              
+              <hr style="border: 1px solid #003f33; margin-top: 30px; margin-bottom: 30px;">
+                </section>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="arts">
+    <div class="container">
+        <div class="content">
+            <h2>Creative Arts & Media</h2>
+            <p>Discover internships in design, film, music, content creation, and journalism.</p>
+            <h2>Internship Opportunities</h2>
+<div class="internship">
+    <h3><a href="https://www.metmuseum.org/about-the-met/internships/high-school/summer-high-school-internships" target="_blank" style="color: #68b0a1;">1. The Met Summer High School Internships</a></h3>
+    This program offers high school students the opportunity to work closely with museum staff, gaining hands-on experience in art, history, and museum operations. Interns participate in various educational activities and professional development. It’s an excellent opportunity for students looking to explore careers in the museum and arts world.
+    <p><strong>Eligibility:</strong> Open to high school students in grades 11–12</p>
+    <p><strong>Duration:</strong> Summer program</p>
+</div>
+
+<div class="internship">
+    <h3><a href="https://filmconsortiumsd.com/become-a-volunteer/" target="_blank" style="color: #68b0a1;">2. Film Consortium San Diego Volunteer Program</a></h3>
+    This volunteer program provides students with the opportunity to engage in film production, marketing, and event coordination. Volunteers help organize film screenings, festivals, and networking events. It’s a great chance to gain experience and connections in the film industry.
+    <p><strong>Eligibility:</strong> Open to high school and college students</p>
+    <p><strong>Duration:</strong> Year-round</p>
+</div>
+
+<div class="internship">
+    <h3><a href="https://www.emmabowenfoundation.org/apply#howto" target="_blank" style="color: #68b0a1;">3. Emma Bowen Foundation Media Internship</a></h3>
+    The Emma Bowen Foundation offers internships that connect students of color with top media and technology companies. Interns gain hands-on experience in journalism, film, and media production, alongside mentorship from professionals. It’s an amazing opportunity for students pursuing careers in media.
+    <p><strong>Eligibility:</strong> High school seniors and college students of color</p>
+    <p><strong>Duration:</strong> Summer or year-round</p>
+</div>
+
+<div class="internship">
+    <h3><a href="https://www.paleycenter.org/education/interns-hs/" target="_blank" style="color: #68b0a1;">4. The Paley Center for Media High School Internship</a></h3>
+    This internship allows students to explore careers in television, film, and digital media. Interns engage in research, assist with exhibitions, and get an inside look at the operations of a leading media institution. It’s perfect for students interested in pursuing a career in media.
+    <p><strong>Eligibility:</strong> Open to high school students</p>
+    <p><strong>Duration:</strong> Summer program</p>
+</div>
+
+<div class="internship">
+    <h3><a href="https://www.nga.gov/opportunities/summer-internships.html" target="_blank" style="color: #68b0a1;">5. National Gallery of Art Summer Internships</a></h3>
+    Interns work with museum professionals on curatorial projects, educational programming, and research. This internship gives students a chance to experience working at a world-renowned art institution. It’s ideal for students interested in art history, curation, or museum education.
+    <p><strong>Eligibility:</strong> Open to high school students and college undergraduates</p>
+    <p><strong>Duration:</strong> Summer</p>
+</div>
+
+<div class="internship">
+    <h3><a href="https://www.artic.edu/learn-with-us/teens/opportunities-for-teens" target="_blank" style="color: #68b0a1;">6. Art Institute of Chicago Teen Opportunities</a></h3>
+    This program offers students opportunities to explore the museum world through hands-on projects, workshops, and mentorship. Interns learn about exhibition design, public programming, and curatorial practices. It’s an exciting opportunity for teens passionate about art and museums.
+    <p><strong>Eligibility:</strong> Open to high school students</p>
+    <p><strong>Duration:</strong> Year-round</p>
+</div>
+
+<div class="internship">
+    <h3><a href="https://www.brooklynmuseum.org/careers/internships-fellowships/creative-practice" target="_blank" style="color: #68b0a1;">7. Brooklyn Museum Creative Practice Internship</a></h3>
+    The Creative Practice Internship at the Brooklyn Museum allows students to gain experience in the arts through hands-on work in exhibitions, education, and public programming. Interns engage with museum staff and artists to develop creative projects. It’s perfect for students interested in pursuing a career in the arts.
+    <p><strong>Eligibility:</strong> Open to high school students</p>
+    <p><strong>Duration:</strong> Summer program</p>
+</div>
+
+<div class="internship">
+    <h3><a href="https://madmuseum.org/programs/teen-programs-mad" target="_blank" style="color: #68b0a1;">8. MAD Museum Teen Programs</a></h3>
+    The Museum of Arts and Design (MAD) offers hands-on workshops and creative programs for teens, where interns work with artists and museum professionals. Interns explore different art mediums and gain experience in exhibition development. This is an immersive learning experience for future artists and curators.
+    <p><strong>Eligibility:</strong> Open to high school students</p>
+    <p><strong>Duration:</strong> Year-round</p>
+</div>
+
+<div class="internship">
+    <h3><a href="https://www.mfa.org/programs/teen-programs" target="_blank" style="color: #68b0a1;">9. Museum of Fine Arts Boston Teen Programs</a></h3>
+    The Museum of Fine Arts offers high school students the opportunity to work on creative projects, learn from artists, and explore the museum’s collections. Interns gain hands-on experience in art education, exhibition preparation, and more. It’s a great chance to explore careers in the arts.
+    <p><strong>Eligibility:</strong> Open to high school students</p>
+    <p><strong>Duration:</strong> Year-round</p>
+</div>
+
+<div class="internship">
+    <h3><a href="https://www.film.virginia.org/virginians/internships/" target="_blank" style="color: #68b0a1;">10. Virginia Film Office Internships</a></h3>
+    The Virginia Film Office internship program provides students with an introduction to the film industry, with opportunities to work on film production, editing, and post-production. Interns gain valuable experience and industry connections. This program is perfect for students interested in filmmaking.
+    <p><strong>Eligibility:</strong> Open to high school students in Virginia</p>
+    <p><strong>Duration:</strong> Varies (summer or year-round)</p>
+</div>
+
+<div class="internship">
+    <h3><a href="https://austinfilmfestival.com/about/get-involved/internship/" target="_blank" style="color: #68b0a1;">11. Austin Film Festival Internship</a></h3>
+    The Austin Film Festival offers high school and college students internships in film production, event planning, and media outreach. Interns gain hands-on experience at one of the country’s leading film festivals. This is an ideal internship for students looking to break into the film industry.
+    <p><strong>Eligibility:</strong> Open to high school students and college students</p>
+    <p><strong>Duration:</strong> Summer</p>
+</div>
+
+<div class="internship">
+    <h3><a href="https://yaf.org/careers-and-internships/" target="_blank" style="color: #68b0a1;">12. Young Americans Foundation Internships</a></h3>
+    The Young Americans Foundation offers internships in media, communications, and event planning. Interns work on political and cultural initiatives, gaining hands-on experience and professional development. It’s a great opportunity for students passionate about media and politics.
+    <p><strong>Eligibility:</strong> Open to high school students</p>
+    <p><strong>Duration:</strong> Summer or year-round</p>
+</div>
+
+<div class="internship">
+    <h3><a href="https://mcachicago.org/Learn/Youth/TCA" target="_blank" style="color: #68b0a1;">13. Museum of Contemporary Art Chicago Teen Creative Agency</a></h3>
+    The Teen Creative Agency program allows high school students to work on art projects, curating exhibitions, and promoting the museum. Interns are involved in artistic collaborations and gain experience working in a contemporary art institution. It’s a great opportunity for students interested in arts and curatorial work.
+    <p><strong>Eligibility:</strong> Open to high school students</p>
+    <p><strong>Duration:</strong> Year-round</p>
+</div>
+
+<div class="internship">
+    <h3><a href="https://www.vogue.com.au/careers/how-to-apply-to-be-a-vogue-intern/news-story/1039df66ab6050fb8f801df972d645f0" target="_blank" style="color: #68b0a1;">14. Vogue Internship Program</a></h3>
+    Vogue offers high school students the chance to work in fashion journalism and media. Interns participate in editorial, marketing, and digital media roles, learning about the fast-paced world of fashion. This is an excellent opportunity for those pursuing careers in fashion or media.
+    <p><strong>Eligibility:</strong> Open to high school students with an interest in fashion</p>
+    <p><strong>Duration:</strong> Summer program</p>
+</div>
+
+<div class="internship">
+    <h3><a href="https://www.bamtheatre.com/summer-internships" target="_blank" style="color: #68b0a1;">15. BAM Theatre Summer Internships</a></h3>
+    The Brooklyn Academy of Music (BAM) offers summer internships in theater production, marketing, and performance. Interns gain experience in event coordination, promotion, and assisting in theatrical performances. It’s a great way to learn more about the theater industry.
+    <p><strong>Eligibility:</strong> Open to high school students</p>
+    <p><strong>Duration:</strong> Summer program</p>
+</div>
+
+<div class="internship">
+    <h3><a href="https://internships.si.edu/" target="_blank" style="color: #68b0a1;">16. Smithsonian Internship Program</a></h3>
+    The Smithsonian offers internships in arts, culture, and museum studies, providing students with the opportunity to work with professionals in the field. Interns assist with curatorial work, educational programming, and museum research. It’s a great way to gain experience at a world-class cultural institution.
+    <p><strong>Eligibility:</strong> Open to high school and college students</p>
+    <p><strong>Duration:</strong> Summer or year-round</p>
+</div>
+
+<div class="internship">
+    <h3><a href="https://tbae.net/about/communications-internships" target="_blank" style="color: #68b0a1;">17. Texas Ballet Theater Communications Internship</a></h3>
+    The Texas Ballet Theater offers high school students a chance to learn about communications in the world of performing arts. Interns assist with writing, event coordination, and social media outreach. It’s a fantastic opportunity for students interested in arts administration and marketing.
+    <p><strong>Eligibility:</strong> Open to high school students</p>
+    <p><strong>Duration:</strong> Summer</p>
+</div>
+
+<div class="internship">
+    <h3><a href="https://www.paleycenter.org/education/interns-hs/" target="_blank" style="color: #68b0a1;">18. The Paley Center for Media High School Internship</a></h3>
+    This internship allows students to explore careers in media through hands-on experiences and mentorship. Interns learn about television, film, and digital media while engaging in research projects. It’s a great introduction to the media industry.
+    <p><strong>Eligibility:</strong> Open to high school students</p>
+    <p><strong>Duration:</strong> Summer program</p>
+</div>
+<h2>Volunteer Opportunities</h2>
+<div class="volunteer">
+    <h3><a href="https://filmconsortiumsd.com/become-a-volunteer/" target="_blank" style="color: #3f7e9c;">1. Film Consortium San Diego Volunteer Program</a></h3>
+    This volunteer program offers individuals the opportunity to get involved with the San Diego film community. Volunteers assist with events, film screenings, and other community-building activities. It’s perfect for anyone passionate about film production and industry events.
+    <p><strong>Eligibility:</strong> Open to all ages</p>
+    <p><strong>Duration:</strong> Year-round</p>
+</div>
+
+<div class="volunteer">
+    <h3><a href="https://carnegiemuseums.org/opportunities/volunteer/" target="_blank" style="color: #3f7e9c;">2. Carnegie Museums Volunteer Opportunities</a></h3>
+    Carnegie Museums offer a variety of volunteer opportunities at its museums, including roles in education, collections, and special events. Volunteers contribute to enriching the museum experience for visitors and help out with exhibitions and educational programs. This is a great chance for anyone interested in the arts and museum work.
+    <p><strong>Eligibility:</strong> Open to volunteers of all ages (some programs require 16+)</p>
+    <p><strong>Duration:</strong> Year-round</p>
+</div>
+<h2>Volunteer Opportunities</h2>
+<div class="volunteer">
+    <h3><a href="https://artinaction.org/volunteer" target="_blank" style="color: #3f7e9c;">3. Art in Action Volunteer Opportunities</a></h3>
+    Art in Action offers volunteers the chance to work with students and teach art in schools. Volunteers can assist with the delivery of art lessons and after-school programs, helping children express themselves through creative projects. It’s a wonderful program for individuals passionate about art education.
+    <p><strong>Eligibility:</strong> Open to high school students and adults</p>
+    <p><strong>Duration:</strong> Flexible (ongoing)</p>
+</div>
+
+<div class="volunteer">
+    <h3><a href="https://www.volunteermatch.org/search/opp3492216.jsp" target="_blank" style="color: #3f7e9c;">4. VolunteerMatch: Arts Volunteer Opportunities</a></h3>
+    VolunteerMatch connects volunteers with opportunities across the U.S., including arts-related volunteer roles. Volunteers can assist with exhibitions, outreach, and nonprofit arts organizations. It’s an excellent resource for those seeking to contribute their time to creative endeavors.
+    <p><strong>Eligibility:</strong> Open to all ages</p>
+    <p><strong>Duration:</strong> Varies by opportunity</p>
+</div>
+
+<div class="volunteer">
+    <h3><a href="https://spyhop.org/volunteer/" target="_blank" style="color: #3f7e9c;">5. Spy Hop Media Volunteer Program</a></h3>
+    Spy Hop offers opportunities for volunteers to assist with media education, including working with youth in video production, music, and digital arts. Volunteers help students learn valuable skills in a creative environment. It’s a great way to get involved in media education and youth empowerment.
+    <p><strong>Eligibility:</strong> Open to all ages (background check required)</p>
+    <p><strong>Duration:</strong> Ongoing</p>
+</div>
+
+<div class="volunteer">
+    <h3><a href="https://communitywordproject.org/get-involved/" target="_blank" style="color: #3f7e9c;">6. Community-Word Project Volunteer Opportunities</a></h3>
+    Community-Word Project engages volunteers in arts-based education and literacy initiatives. Volunteers work with students on creative writing, spoken word poetry, and performance. It’s ideal for those interested in youth mentorship and arts education.
+    <p><strong>Eligibility:</strong> Open to all ages (particularly for those with an interest in education)</p>
+    <p><strong>Duration:</strong> Year-round</p>
+</div>
+
+<div class="volunteer">
+    <h3><a href="https://www.si.edu/volunteer/DigitalVolunteers" target="_blank" style="color: #3f7e9c;">7. Smithsonian Digital Volunteers</a></h3>
+    The Smithsonian's Digital Volunteer program allows individuals to transcribe and edit digitized documents. Volunteers help make historical documents and artifacts accessible online. This is an excellent way to engage in history and archival work from home.
+    <p><strong>Eligibility:</strong> Open to all ages</p>
+    <p><strong>Duration:</strong> Flexible</p>
+</div>
+
+<div class="volunteer">
+    <h3><a href="https://www.icanhelp.net/student-volunteers" target="_blank" style="color: #3f7e9c;">8. I Can Help Student Volunteer Program</a></h3>
+    I Can Help connects students with volunteer opportunities that focus on digital literacy, technology, and social media. Volunteers work on initiatives to educate others and improve online safety and digital communication. It’s a great program for tech-savvy students.
+    <p><strong>Eligibility:</strong> Open to high school students</p>
+    <p><strong>Duration:</strong> Flexible (ongoing)</p>
+</div>
+
+<div class="volunteer">
+    <h3><a href="https://826national.org/join-the-movement/volunteer/" target="_blank" style="color: #3f7e9c;">9. 826 National Volunteer Program</a></h3>
+    826 National offers volunteer opportunities for students to work with younger children on writing and creative projects. Volunteers can help with tutoring, workshops, and after-school programs. It’s an inspiring way to support literacy and creative education.
+    <p><strong>Eligibility:</strong> Open to high school students and adults</p>
+    <p><strong>Duration:</strong> Flexible (ongoing)</p>
+</div>
+
+<div class="volunteer">
+    <h3><a href="https://www.artsanglevantage.org/getinvolved" target="_blank" style="color: #3f7e9c;">10. Arts Angle Vantage Volunteer Opportunities</a></h3>
+    Arts Angle Vantage offers a variety of volunteer roles within the arts, ranging from assisting with gallery events to supporting youth arts programs. Volunteers help make the arts accessible to more people and contribute to the local arts scene. It’s a great fit for students interested in arts administration and community engagement.
+    <p><strong>Eligibility:</strong> Open to all ages</p>
+    <p><strong>Duration:</strong> Flexible</p>
+</div>
+
+<div class="volunteer">
+    <h3><a href="https://www.artandculturecenter.org/volunteer-opportunities" target="_blank" style="color: #3f7e9c;">11. Art and Culture Center Volunteer Opportunities</a></h3>
+    The Art and Culture Center offers volunteers the chance to help with art exhibits, educational programs, and public events. Volunteers can also assist with fundraising and community outreach. This is an ideal opportunity for students passionate about arts administration.
+    <p><strong>Eligibility:</strong> Open to high school students and adults</p>
+    <p><strong>Duration:</strong> Year-round</p>
+</div>
+
+<div class="volunteer">
+    <h3><a href="https://theumbrellaarts.org/about/volunteer" target="_blank" style="color: #3f7e9c;">12. The Umbrella Arts Center Volunteer Program</a></h3>
+    The Umbrella Arts Center provides volunteers with opportunities to assist with art classes, theater performances, and gallery exhibitions. Volunteers play an important role in supporting arts education in the local community. It’s an excellent way to gain experience in arts administration.
+    <p><strong>Eligibility:</strong> Open to high school students and adults</p>
+    <p><strong>Duration:</strong> Year-round</p>
+</div>
+
+<div class="volunteer">
+    <h3><a href="https://www.americansforthearts.org/by-program/networks-and-councils/arts-and-business-council-of-new-york/abcny-matching-portal/for-businesses/teams-of-volunteers" target="_blank" style="color: #3f7e9c;">13. Americans for the Arts: Volunteer Portal</a></h3>
+    Americans for the Arts connects volunteers with art-related organizations and programs. This platform offers a range of opportunities, from assisting with gallery openings to organizing cultural events. It’s an excellent resource for students interested in the intersection of business and the arts.
+    <p><strong>Eligibility:</strong> Open to all ages</p>
+    <p><strong>Duration:</strong> Varies by opportunity</p>
+</div>
+
+<div class="volunteer">
+    <h3><a href="https://www.metmuseum.org/support/volunteer" target="_blank" style="color: #3f7e9c;">14. The Metropolitan Museum of Art Volunteer Opportunities</a></h3>
+    The Met offers a variety of volunteer roles, including gallery assistants, event staff, and administrative support. Volunteers gain firsthand experience in one of the world's leading museums. This is a perfect opportunity for anyone passionate about art history and museum operations.
+    <p><strong>Eligibility:</strong> Open to high school students and adults</p>
+    <p><strong>Duration:</strong> Year-round</p>
+</div>
+
+<div class="volunteer">
+    <h3><a href="https://www.artwithaheart.net/getinvolved/volunteer/" target="_blank" style="color: #3f7e9c;">15. Art with a Heart Volunteer Program</a></h3>
+    Art with a Heart provides volunteer opportunities to help children and adults engage in artistic expression. Volunteers lead art workshops, help with exhibitions, and assist with outreach programs. It’s a wonderful way to give back through creativity and arts education.
+    <p><strong>Eligibility:</strong> Open to all ages</p>
+    <p><strong>Duration:</strong> Flexible</p>
+</div>
+
+<div class="volunteer">
+    <h3><a href="https://www.munroecenter.org/volunteering.html" target="_blank" style="color: #3f7e9c;">16. Munroe Center for the Arts Volunteer Opportunities</a></h3>
+    The Munroe Center offers opportunities for volunteers to assist with art classes, performances, and community outreach events. Volunteers gain hands-on experience in arts administration and education. It’s a great fit for anyone wanting to support the arts in their community.
+    <p><strong>Eligibility:</strong> Open to high school students and adults</p>
+    <p><strong>Duration:</strong> Year-round</p>
+</div>
+
+<div class="volunteer">
+    <h3><a href="https://youngatartmuseum.org/volunteer/" target="_blank" style="color: #3f7e9c;">17. Young at Art Museum Volunteer Program</a></h3>
+    The Young at Art Museum offers volunteer opportunities for individuals passionate about working with children and the arts. Volunteers assist with workshops, events, and special programs. It’s a wonderful way to get involved in arts education and museum operations.
+    <p><strong>Eligibility:</strong> Open to high school students and adults</p>
+    <p><strong>Duration:</strong> Flexible</p>
+</div>
+
+<div class="volunteer">
+    <h3><a href="https://www.artcenternj.org/support/volunteer/" target="_blank" style="color: #3f7e9c;">18. Art Center NJ Volunteer Opportunities</a></h3>
+    The Art Center NJ provides volunteers with opportunities to assist with art classes, exhibitions, and special events. Volunteers can help out in various roles, from gallery assistants to event coordinators. It’s an excellent way to gain experience in arts administration and education.
+    <p><strong>Eligibility:</strong> Open to high school students and adults</p>
+    <p><strong>Duration:</strong> Year-round</p>
+</div>
+
+<div class="volunteer">
+    <h3><a href="https://crealde.org/membership-support/volunteer-opportunities/" target="_blank" style="color: #3f7e9c;">19. Crealdé School of Art Volunteer Program</a></h3>
+    Crealdé School of Art offers volunteers the chance to help with art exhibitions, classes, and community outreach initiatives. Volunteers support the center’s mission of providing art education to the community. It’s perfect for those interested in arts education and community engagement.
+    <p><strong>Eligibility:</strong> Open to all ages</p>
+    <p><strong>Duration:</strong> Flexible</p>
+</div>
+
+<div class="volunteer">
+    <h3><a href="https://artscentereast.org/volunteer/" target="_blank" style="color: #3f7e9c;">20. Arts Center East Volunteer Opportunities</a></h3>
+    The Arts Center East offers volunteer opportunities for individuals to assist with performances, events, and educational programs. Volunteers can work in various capacities, from administrative support to event staffing. It’s a great chance to be involved in the local arts community.
+    <p><strong>Eligibility:</strong> Open to all ages</p>
+    <p><strong>Duration:</strong> Year-round</p>
+</div>
+<h2>Program Opportunities</h2>
+<div class="internship">
+    <h3><a href="https://nytedu.com/pre-college/summer-academy/nyc/" target="_blank" style="color: #48966c;">1. NYU Summer Academy in New York City</a></h3>
+    The NYU Summer Academy offers students the chance to take college-level courses and experience life in the heart of NYC. Participants have the opportunity to learn from industry professionals and gain hands-on experience in their chosen fields. It's a great way to kickstart your creative career and expand your knowledge in arts and media.
+    <p><strong>Eligibility:</strong> High school students (grades 9-12)</p>
+    <p><strong>Duration:</strong> Summer (typically 3 weeks)</p>
+</div>
+
+<div class="internship">
+    <h3><a href="https://www.ugagspa.org/camp" target="_blank" style="color: #48966c;">2. University of Georgia Summer Media Camp</a></h3>
+    The UGA Summer Media Camp provides students with the opportunity to explore the world of journalism, video production, and digital media. Participants will engage in workshops, hands-on projects, and learn from industry professionals. This is a great camp for anyone interested in a career in media or film.
+    <p><strong>Eligibility:</strong> Open to high school students (grades 9-12)</p>
+    <p><strong>Duration:</strong> Summer (1-2 weeks)</p>
+</div>
+
+<div class="internship">
+    <h3><a href="https://www.moma.org/calendar/groups/55" target="_blank" style="color: #48966c;">3. MoMA Teen Programs</a></h3>
+    MoMA offers teens the chance to explore contemporary art through hands-on projects, workshops, and mentorship. Students can work with artists and gain insight into the creative process. The program aims to help teens connect with the world of art and culture.
+    <p><strong>Eligibility:</strong> High school students</p>
+    <p><strong>Duration:</strong> Year-round, with specific summer programs</p>
+</div>
+
+<div class="internship">
+    <h3><a href="https://whitney.org/education/teens" target="_blank" style="color: #48966c;">4. Whitney Museum Teen Programs</a></h3>
+    The Whitney Museum offers a variety of programs for teens, including internships, art workshops, and public programs. Participants can engage with contemporary art and learn how to express themselves through creative projects. The museum’s teen programs focus on personal growth and professional development.
+    <p><strong>Eligibility:</strong> High school students</p>
+    <p><strong>Duration:</strong> Year-round, with summer options</p>
+</div>
+
+<div class="internship">
+    <h3><a href="https://freshfilms.org/weeklyfilmmaking/" target="_blank" style="color: #48966c;">5. Fresh Films Weekly Filmmaking Program</a></h3>
+    Fresh Films offers an exciting filmmaking program where teens can create films alongside industry professionals. The program focuses on hands-on experience and gives students the tools they need to create their own projects. It’s a great opportunity for teens to hone their filmmaking skills and explore their passion for media.
+    <p><strong>Eligibility:</strong> High school students (ages 13-18)</p>
+    <p><strong>Duration:</strong> Weekly, year-round</p>
+</div>
+
+<div class="internship">
+    <h3><a href="https://tisch.nyu.edu/special-programs/summer-at-tisch" target="_blank" style="color: #48966c;">6. Summer at Tisch - NYU</a></h3>
+    Summer at Tisch offers students the chance to take immersive courses in filmmaking, acting, screenwriting, and more. The program is led by professional instructors from NYU’s Tisch School of the Arts. This is an excellent opportunity for high school students passionate about arts and media to enhance their skills.
+    <p><strong>Eligibility:</strong> High school students (grades 9-12)</p>
+    <p><strong>Duration:</strong> Summer (3-4 weeks)</p>
+</div>
+
+<div class="internship">
+    <h3><a href="https://www.nslcleaders.org/youth-leadership-programs/graphic-design/" target="_blank" style="color: #48966c;">7. National Student Leadership Conference (NSLC) Graphic Design Program</a></h3>
+    The NSLC Graphic Design program offers students the opportunity to learn from experienced professionals in the graphic design field. Students will gain hands-on experience and knowledge about the latest tools and techniques used in the industry. This program helps teens develop valuable skills for a potential career in design.
+    <p><strong>Eligibility:</strong> High school students (ages 14-18)</p>
+    <p><strong>Duration:</strong> Summer (2 weeks)</p>
+</div>
+
+<div class="internship">
+    <h3><a href="https://brynmawrfilm.org/education/summer-filmmaking-workshop/" target="_blank" style="color: #48966c;">8. Bryn Mawr Film Institute Summer Filmmaking Workshop</a></h3>
+    The Bryn Mawr Film Institute offers a summer filmmaking workshop for high school students to create their own short films. The program includes hands-on training in writing, shooting, editing, and producing a film. It’s a great opportunity for aspiring filmmakers to gain practical experience.
+    <p><strong>Eligibility:</strong> High school students (grades 9-12)</p>
+    <p><strong>Duration:</strong> Summer (1-2 weeks)</p>
+</div>
+
+<div class="internship">
+    <h3><a href="https://www.nyfa.edu/teen-summer-camps-and-workshops/" target="_blank" style="color: #48966c;">9. New York Film Academy Teen Camps & Workshops</a></h3>
+    The NYFA offers summer camps and workshops that cover various areas of filmmaking, including acting, screenwriting, and producing. Students will get hands-on experience while working alongside professionals in the industry. It’s a great opportunity to immerse yourself in the world of film and media.
+    <p><strong>Eligibility:</strong> High school students (ages 14-18)</p>
+    <p><strong>Duration:</strong> Summer (1-4 weeks)</p>
+</div>
+
+<div class="internship">
+    <h3><a href="https://www.socapa.org/teen-camps/film-camps/#:~:text=SOCAPA%20offers%20three%20filmmaking%20intensives,skills%20in%20our%20SCREENWRITING%20intensives." target="_blank" style="color: #48966c;">10. SOCAPA Film Camps</a></h3>
+    SOCAPA offers intensive filmmaking programs for teens where they can focus on directing, producing, and editing. Students work with professionals to create high-quality films and learn the ins-and-outs of the industry. It’s a perfect fit for aspiring filmmakers looking to develop their craft.
+    <p><strong>Eligibility:</strong> High school students (ages 14-18)</p>
+    <p><strong>Duration:</strong> Summer (2-4 weeks)</p>
+</div>
+
+<div class="internship">
+    <h3><a href="https://cinema.usc.edu/summer/index.cfm" target="_blank" style="color: #48966c;">11. USC School of Cinematic Arts Summer Program</a></h3>
+    The USC Summer Program offers teens the chance to explore film production through hands-on classes, film screenings, and more. Students will get exposure to the latest tools and techniques in the industry while working in professional environments. This is an ideal program for students wanting to study filmmaking at a prestigious school.
+    <p><strong>Eligibility:</strong> High school students (grades 9-12)</p>
+    <p><strong>Duration:</strong> Summer (2-4 weeks)</p>
+</div>
+
+<div class="internship">
+    <h3><a href="https://www.interlochen.org/film-new-media/camp-programs/high-school/filmmaking" target="_blank" style="color: #48966c;">12. Interlochen Filmmaking Summer Camp</a></h3>
+    Interlochen’s filmmaking summer camp is an immersive experience for students to explore the creative process of filmmaking. Teens will learn everything from screenwriting to editing, culminating in the production of their own short films. It’s a great way for aspiring filmmakers to build their portfolio and skills.
+    <p><strong>Eligibility:</strong> High school students (ages 14-18)</p>
+    <p><strong>Duration:</strong> Summer (4-5 weeks)</p>
+</div>
+
+<div class="internship">
+    <h3><a href="https://sffilm.org/young-filmmakers-camp/" target="_blank" style="color: #48966c;">13. SFFILM Young Filmmakers Camp</a></h3>
+    The SFFILM Young Filmmakers Camp offers high school students an immersive introduction to filmmaking. Students will learn about story development, filming techniques, and editing. It’s a great opportunity to create films and gain skills in the media industry.
+    <p><strong>Eligibility:</strong> High school students (ages 14-18)</p>
+    <p><strong>Duration:</strong> Summer (2 weeks)</p>
+</div>
+
+<div class="internship">
+    <h3><a href="https://web.cvent.com/event/1435e74f-316d-4110-a957-73f45e58e8cb/summary" target="_blank" style="color: #48966c;">14. Film & Media Arts Camp at Cvent</a></h3>
+    This film and media arts camp offers a chance to learn the basics of filmmaking and media production, providing hands-on opportunities to work with equipment and develop editing skills. Students will work on individual and group projects and showcase their work at the end of the camp. It's an excellent program for anyone interested in a career in media.
+    <p><strong>Eligibility:</strong> High school students</p>
+    <p><strong>Duration:</strong> Summer (1-2 weeks)</p>
+</div>
+
+<div class="internship">
+    <h3><a href="https://precollege.syr.edu/programs-courses/summer-college-residential/summer-college-residential-course-listing/intro-to-film-media-arts/" target="_blank" style="color: #48966c;">15. Syracuse University Summer College: Intro to Film & Media Arts</a></h3>
+    Syracuse University’s Summer College offers an introduction to film and media arts program where high school students can explore the fundamentals of filmmaking, storytelling, and editing. Students will engage in hands-on production of their own short films and learn the technical and creative aspects of media production.
+    <p><strong>Eligibility:</strong> High school students (ages 15-18)</p>
+    <p><strong>Duration:</strong> Summer (3 weeks)</p>
+</div>
+<hr style="border: 1px solid #003f33; margin-top: 30px; margin-bottom: 30px;">
+    </section>
+</div>
+</section>
+
+<footer class="footer">
+    <img src="images/logo.png" alt="Logo" class="logo" />
+    <p>Contact Info: pathwayinterns@gmail.com</p>
+</footer>
+
+</body>
+</html>

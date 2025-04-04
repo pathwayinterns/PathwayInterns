@@ -1,0 +1,314 @@
+/* Set the font family and reset margin and padding for the entire document */
+body {
+    font-family: "arial";
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Define a header with a height of 0px */
+.header {
+    height: 0px;
+}
+
+/* Sidebar menu styles */
+#sidebarMenu {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    margin-top: 0px;
+    background-color: rgb(114, 101, 169); /* Background color for the sidebar menu */
+    opacity: 0.8;
+    transform: translate(-251px); /* Initially hide the sidebar menu */
+    transition: transform 300ms ease-in-out; /* Transition effect for opening the sidebar menu */
+    z-index: 20;
+}
+
+/* Styles for the menu list */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 35px;
+}
+
+/* Styles for list items within the menu */
+.menu li {
+    color: rgb(198, 225, 241); /* Text color for menu items */
+}
+
+/* Styles for anchor tags within list items */
+.menu li a {
+    color: rgb(232, 246, 251); /* Text color for menu item links */
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+/* Styles for the sidebar icon */
+.sidebarIcon {
+    width: 22px;
+    height: 22px;
+    position: fixed;
+    z-index: 20;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    mix-blend-mode: difference;
+    z-index: 21;
+}
+
+/* Animation styles for sidebar menu opening */
+#Open:checked ~ #sidebarMenu {
+    transform: translate(0px); /* Translate the sidebar menu to show it */
+}
+
+/* Styles for the sidebar icon's wrapper elements */
+.wrapper {
+    height: 3px;
+    background-color: aliceblue;
+    transition: all 0.5s;
+}
+
+/* Adjustments for different wrapper states */
+.wrapper.second,
+.wrapper.third {
+    margin-top: 3px;
+}
+
+/* Adjustments for sidebar icon animation on click */
+#Open:checked ~ .sidebarIcon > .wrapper.second {
+    opacity: 0; /* Hide the middle bar of the sidebar icon */
+}
+
+#Open:checked ~ .sidebarIcon > .wrapper.first {
+    transform: rotate(315deg); /* Rotate the first bar of the sidebar icon */
+    margin-top: 8px;
+}
+
+#Open:checked ~ .sidebarIcon > .wrapper.third {
+    transform: rotate(-315deg); /* Rotate the third bar of the sidebar icon */
+    margin-top: -9px;
+}
+
+/* Styles for the main content container */
+.container1 {
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    background-image: url('../images/p3bcg.avif'); /* Background image for the main content container */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    padding: 0 20px;
+    padding-top: 60px;
+}
+
+/* Styles for text elements within the container */
+.container1 h1,
+.container1 h2,
+.container1 p {
+    font-size: 24px; /* Increase font size for all text */
+    margin-left: 20px;
+    margin-right: auto;
+    position: fixed;
+    top: 0%;
+    left: 3%;
+    color: rgb(0, 0, 0); /* Text color for headings and paragraphs */
+    animation: thingity linear 5ms; /* Define animation for text elements */
+    animation-timeline: view();
+    animation-range: exit;
+}
+
+/* Animation keyframes for text elements */
+@keyframes thingity {
+    to {
+        transform: translate(-3%, -10%); /* Move the text elements */
+        opacity: 0; /* Fade out the text elements */
+    }
+}
+
+/* Adjustments for paragraph text */
+.container1 p {
+    line-height: 0.7; /* Adjust line height for better readability */
+    font-size: 20px;
+    position: relative;
+}
+
+/* Adjustments for heading text */
+.container1 h1 {
+    line-height: 1.2; /* Adjust line height for better readability */
+    font-size: 80px;
+    position: relative;
+}
+
+/* Adjustments for secondary heading text */
+.container1 h2 {
+    line-height: 0.7; /* Adjust line height for better readability */
+    font-size: 30px;
+    position: relative;
+}
+
+/* Styles for anchor tag within h1 */
+.container1 h1 a {
+    text-align: center;
+    text-decoration: none;
+    top: -53%;
+    left: 35%; /* Adjust position for the new button */
+    color: rgb(0, 0, 0); /* Text color for anchor tag within h1 */
+    position: relative;
+    font-size: 24px;
+    background-color: transparent;
+    padding: 8px 25px; /* Increase padding to make the button longer */
+    border: solid;
+    border-color: rgb(0, 0, 0); /* Border color for the button */
+    transition: background-color 0.3s; /* Add transition for hover effect */
+}
+
+/* Hover styles for h1 anchor tag */
+.container1 h1 a:hover {
+    background-color: rgba(153, 139, 153, 0.624); /* Background color on hover */
+    border: solid;
+    border-color: rgba(0, 0, 0, 0.911); /* Border color on hover */
+}
+
+/* Section navigation styles */
+.section-nav {
+    background-color: #e2d8f7; /* Background color for the section navigation */
+    color: #fff; /* Text color for the section navigation */
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    position: sticky;
+    top: 0;
+    z-index: 1; /* Ensure the navigation bar stays on top */
+}
+
+.section-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+    padding: 0;
+}
+
+.section-nav ul li {
+    display: inline;
+}
+
+.section-nav ul li a {
+    text-decoration: none;
+    color: black; /* Text color for navigation links */
+    padding: 5px 15px;
+}
+
+.section-nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Background color on hover */
+}
+
+/* Margin for scrolling sections */
+.section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden; /* Hide content outside the section */
+    position: relative; /* Needed for scroll animations */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    position: relative; /* Needed for scroll animations */
+}
+
+/* Content and image styles */
+.content,
+.image {
+    flex-basis: 50%;
+    padding: 0 20px; /* Adjust padding as needed */
+    opacity: 0; /* Initially hide content */
+    transform: translateY(50px); /* Move content down */
+    transition: opacity 0.4s ease, transform 0.4s ease; /* Add transition for animations */
+}
+
+/* Image styles */
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Add border radius for image */
+}
+
+/* Alternate sides for even sections */
+#section1 .content {
+    order: 2;
+}
+
+#section1 .image{
+    order: 1;
+}
+
+/* Heading styles for sections */
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* Paragraph styles for sections */
+.section p {
+    font-size: 18px;
+    color: #333; /* Change text color to make it more visible */
+    line-height: 1.5;
+}
+
+/* Scroll animations */
+/* Fade in and slide up effect */
+.section:hover .content,
+.section:hover .image {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Margin for scrolling sections */
+.section {
+    scroll-margin-top: 60px; /* Adjust this value to match the height of the navigation bar */
+}
+
+/* Animation keyframes for color shift */
+@keyframes colorShift {
+    0% {
+        background-color: #eee2ff; /* Initial background color */
+    }
+
+    25% {
+        background-color: #826fa4; /* Intermediate background color */
+    }
+
+    50% {
+        background-color: #bcb0e0; /* Intermediate background color */
+    }
+
+    75% {
+        background-color: #826fa4; /* Intermediate background color */
+    }
+
+    100% {
+        background-color: #eee2ff; /* Final background color */
+    }
+}
+
+/* Apply the color shift animation to sections 1 to 5 */
+#section1,
+#section2 {
+    animation: colorShift 20s infinite alternate linear forwards; /* Adjust duration and timing function as needed */
+}

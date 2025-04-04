@@ -1,0 +1,146 @@
+const statesData = [
+    {
+        name: "Alabama",
+        internships: [
+            {
+                title: "QuantHub Alabama Data Scholars Program",
+                description: "An 8-week paid summer internship placing high school juniors and seniors with Alabama-based companies that utilize data creatively.",
+                link: "http://example.com"
+            },
+            {
+                title: "NASA Internship Programs",
+                description: "NASA’s Office of STEM Engagement offers paid internships for high school students, allowing them to contribute to NASA's mission.",
+                link: "http://example.com"
+            }
+        ],
+        volunteers: [
+            {
+                title: "Auburn University's Samuel Ginn College of Engineering – K-12 Outreach Programs",
+                description: "High school students can volunteer in various outreach activities such as E-Day, TEAMS, BEST Robotics, and PEAK.",
+                link: "http://example.com"
+            }
+        ],
+        programs: [
+            {
+                title: "University of Alabama's Student Introduction to Engineering (SITE)",
+                description: "A summer program for rising high school juniors and seniors interested in science, technology, engineering, and mathematics.",
+                link: "http://example.com"
+            }
+        ]
+    },
+    {
+        name: "California",
+        internships: [
+            {
+                title: "California Tech Internship Program",
+                description: "A summer internship program for high school students interested in coding, engineering, and technology.",
+                link: "http://example.com"
+            }
+        ],
+        volunteers: [
+            {
+                title: "Tech for Good Volunteer Program",
+                description: "Volunteer to help tech companies with community outreach and STEM education initiatives.",
+                link: "http://example.com"
+            }
+        ],
+        programs: [
+            {
+                title: "Silicon Valley Summer STEM Camp",
+                description: "A hands-on summer program introducing high school students to the world of coding, robotics, and AI.",
+                link: "http://example.com"
+            }
+        ]
+    },
+    {
+        name: "New York",
+        internships: [
+            {
+                title: "NYC Data Science Internship",
+                description: "An internship program focused on data science, offering high school students the chance to work with real-world data.",
+                link: "http://example.com"
+            }
+        ],
+        volunteers: [
+            {
+                title: "NYC Volunteer Corps - STEM Outreach",
+                description: "A volunteer program that provides opportunities to engage in STEM outreach in New York City schools.",
+                link: "http://example.com"
+            }
+        ],
+        programs: [
+            {
+                title: "NYU STEM Scholars Program",
+                description: "A competitive program for students interested in pursuing careers in STEM fields, offering mentorship and research opportunities.",
+                link: "http://example.com"
+            }
+        ]
+    }
+];
+
+// Function to dynamically create content for each state
+function generateStateSections() {
+    const container = document.getElementById("stateSections");
+
+    statesData.forEach(state => {
+        let stateSection = document.createElement("section");
+        stateSection.classList.add("section");
+        stateSection.id = state.name.toLowerCase();
+
+        let stateContent = `
+            <div class="container">
+                <div class="content">
+                    <h2>${state.name}</h2>
+                    
+                    <!-- Internships -->
+                    <h3>Internships</h3>
+                    <div class="accordion">
+                        ${state.internships.map(internship => `
+                            <div class="card">
+                                <button class="accordion-button">${internship.title}</button>
+                                <div class="accordion-content">
+                                    <p>${internship.description}</p>
+                                    <a href="${internship.link}" target="_blank">Learn More</a>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+
+                    <!-- Volunteer Opportunities -->
+                    <h3>Volunteer Opportunities</h3>
+                    <div class="accordion">
+                        ${state.volunteers.map(volunteer => `
+                            <div class="card">
+                                <button class="accordion-button">${volunteer.title}</button>
+                                <div class="accordion-content">
+                                    <p>${volunteer.description}</p>
+                                    <a href="${volunteer.link}" target="_blank">Learn More</a>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+
+                    <!-- Programs -->
+                    <h3>Programs</h3>
+                    <div class="accordion">
+                        ${state.programs.map(program => `
+                            <div class="card">
+                                <button class="accordion-button">${program.title}</button>
+                                <div class="accordion-content">
+                                    <p>${program.description}</p>
+                                    <a href="${program.link}" target="_blank">Learn More</a>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            </div>
+        `;
+
+        stateSection.innerHTML = stateContent;
+        container.appendChild(stateSection);
+    });
+}
+
+// Run the function to generate state sections on page load
+window.onload = generateStateSections;

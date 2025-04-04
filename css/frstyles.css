@@ -1,0 +1,221 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #eaf7f1; /* Soft pastel green */
+    color: #333333; /* Dark gray for readability */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.logo {
+  display: block;
+  margin: 0;
+  padding: 0;
+  max-width: 50px;
+  height: auto;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #d4efdf; /* Light pastel green */
+    padding: 20px 40px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2f4f4f; /* Default color of the navbar links */
+    font-weight: 500;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #358da1; /* Set the hover color to your desired color */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none; /* Hide by default */
+    position: absolute;
+    background-color: #b9ddcd;
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+    margin: 0; /* Remove any margin */
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: #2f4f4f;
+    font-size: 16px;
+}
+
+.dropdown-menu a:hover {
+    color: #3b9a6a; /* Soft green for hover */
+}
+
+/* Main Header */
+.main-header {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.main-header h1 {
+    font-size: 48px;
+    color: #427b6b;
+    margin-bottom: 20px;
+}
+
+/* About Us Section */
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about-box {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: -50px;
+}
+
+.about-box h2 {
+    color: #509f97; /* Title color */
+    font-size: 22px;
+}
+
+.about-box p {
+    color: #3d776d; /* Paragraph text color */
+    font-size: 16px;
+}
+
+.about-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Resources Section */
+.resources-section {
+    font-family: 'Poppins', sans-serif !important;
+    text-align: center;
+    padding: 0px 20px;
+    margin-top: -10px;
+}
+
+.resource-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 70px;
+}
+
+.resource {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 280px; /* Added width for consistency */
+    margin-bottom: 50px;
+}
+
+.resource img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.resource a {
+    text-decoration: none;
+    color: #6dbfbb; /* Matching soft green */
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.resource:hover {
+    transform: translateY(-5px); /* Moves the resource up by 5px */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); /* Adds a shadow to enhance the lifting effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Featured Resources Section Text Color */
+.resources-section h2 {
+    color: #509f97; /* Set the color of the heading */
+    font-size: 30px;
+}
+
+.resources-section p {
+    color: #3d776d; /* Set the color of the paragraphs */
+    font-size: 20px;
+}
+
+/* You may also want to change other text in the section */
+.resources-section {
+    color: #6dbfbb; /* Set the default color for text within the resources-section */
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #d4efdf; /* Light pastel green */
+    padding: 20px 40px;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.footer p {
+    margin: 0;
+    color: #2f4f4f; /* Dark gray text for footer */
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-box {
+        width: 90%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}

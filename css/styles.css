@@ -94,7 +94,7 @@ body {
     font-size: 48px; /* Larger size for impact */
     color: #5cab95;
     font-family: 'Roboto', sans-serif; /* Clean and modern font */
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 .highlight {
@@ -135,7 +135,10 @@ body {
     transition: 0.3s;
     font-family: 'Roboto', sans-serif;
     margin-top: 35px;
-}
+    display: block; /* Ensures the buttons are block elements, so they stack */
+    margin: 20px auto; /* Centers the buttons and adds space between them */
+    margin-bottom: 30px;
+    }
 
 .cta-button:hover {
     background-color: #9de1d9; /* Darker green on hover */

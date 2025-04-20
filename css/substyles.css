@@ -22,14 +22,14 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: #d4efdf; /* Light pastel green */
-    padding: 20px 40px;
+    padding: 15px 20px; /* Adjusted padding for mobile */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 20px; /* Reduced gap for mobile */
     margin: 0;
     padding: 0;
 }
@@ -40,19 +40,19 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #2f4f4f; /* Default color of the navbar links */
+    color: #2f4f4f;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px; /* Adjusted font size for mobile */
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #358da1; /* Set the hover color to your desired color */
+    color: #358da1;
 }
 
 /* Dropdown Menu */
 .dropdown-menu {
-    display: none; /* Hide by default */
+    display: none;
     position: absolute;
     background-color: #b9ddcd;
     list-style: none;
@@ -60,10 +60,9 @@ body {
     border-radius: 5px;
     top: 100%;
     left: 0;
-    margin: 0; /* Remove any margin */
+    margin: 0;
 }
 
-/* Show dropdown on hover */
 .dropdown:hover .dropdown-menu {
     display: block;
 }
@@ -76,48 +75,48 @@ body {
 .dropdown-menu a {
     text-decoration: none;
     color: #2f4f4f;
-    font-size: 16px;
+    font-size: 14px; /* Adjusted font size for mobile */
 }
 
 .dropdown-menu a:hover {
-    color: #3b9a6a; /* Soft green for hover */
+    color: #3b9a6a;
 }
 
 /* Main Header */
 .main-header {
     text-align: center;
-    padding: 50px 20px; /* Adjust padding for clarity */
+    padding: 40px 20px; /* Adjusted padding for clarity */
 }
 
 .main-header h1 {
-    font-size: 48px;
+    font-size: 36px; /* Reduced font size for mobile */
     color: #457c7e;
     margin-bottom: 10px;
 }
 
 .main-header p {
-    font-size: 25px;
+    font-size: 20px; /* Reduced font size for mobile */
     color: #509f97;
     margin-left: auto;
     margin-right: auto;
-    max-width: 900px;
+    max-width: 700px; /* Adjusted max-width */
     padding: 0 20px;
 }
 
 /* Submit Section */
 .submit-section {
     text-align: center;
-    padding: 40px 20px;
+    padding: 30px 20px; /* Adjusted padding */
 }
 
 .google-form {
-    max-width: 800px;
+    max-width: 100%; /* Full width for mobile */
     margin: 0 auto;
 }
 
 .google-form iframe {
     width: 100%;
-    height: 880px;
+    height: 500px; /* Reduced height for mobile */
     border: none;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -125,12 +124,12 @@ body {
 
 /* Contact Info Section */
 .contact-info {
-    text-align: center; /* Center the text */
-    margin-top: 20px;    /* Adds space above the contact info */
-    font-size: 16px;     /* Optional: Adjust the size of the text */
-    color: #2f4f4f;      /* Dark color for text */
-    width: 100%;         /* Ensure it spans the width */
-    padding: 10px 0;     /* Optional: Add padding to make it more balanced */
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px; /* Reduced font size for mobile */
+    color: #2f4f4f;
+    width: 100%;
+    padding: 10px 0;
 }
 
 .contact-info a {
@@ -146,14 +145,45 @@ body {
 .footer {
     display: flex;
     justify-content: space-between;
-    background-color: #d4efdf; /* Light pastel green */
-    padding: 20px 40px;
+    background-color: #d4efdf;
+    padding: 15px 20px; /* Adjusted padding */
     align-items: center;
-    margin-top: 50px;
 }
 
 .footer p {
     margin: 0;
-    color: #2f4f4f; /* Dark gray text for footer */
-    font-size: 14px;
+    color: #2f4f4f;
+    font-size: 12px; /* Reduced font size for mobile */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px; /* Reduced gap for mobile */
+    }
+
+    .main-header h1 {
+        font-size: 28px; /* Adjusted for mobile */
+    }
+
+    .main-header p {
+        font-size: 18px; /* Adjusted font size */
+    }
+
+    .google-form iframe {
+        height: 400px; /* Further reduced iframe height for mobile */
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 20px; /* Adjusted padding */
+    }
 }

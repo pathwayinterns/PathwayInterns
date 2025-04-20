@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #eaf7f1; /* Soft pastel green */
@@ -92,7 +93,6 @@ body {
     font-family: 'Poppins', sans-serif !important;
     font-size: 48px; /* Larger size for impact */
     color: #5cab95;
-    font-family: 'Roboto', sans-serif; /* Clean and modern font */
     margin-bottom: 20px;
     margin-top:-10px;
 }
@@ -255,11 +255,6 @@ button {
     right: 10px;
 }
 
-/* Show the first flashcard */
-.flashcard:first-child {
-    display: block;
-}
-
 /* Resources Section */
 .resources-section {
     font-family: 'Poppins', sans-serif !important;
@@ -415,55 +410,40 @@ button {
     line-height: 1.5; /* Set line height */
 }
 
-/* Scroll animations */
-.section:hover .content,
-.section:hover .image {
-    opacity: 1; /* Show content on hover */
-    transform: translateY(0); /* Move content up */
-}
-
-/* Adjust scroll margin top */
-.section {
-    scroll-margin-top: 60px; /* Adjust this value to match the height of the navigation bar */
-}
-
-/* Keyframes for color shift animation */
-@keyframes colorShift {
-    0% {
-        background-color: #ffe2fc; /* Set background color */
+/* Media Queries for Small Screens */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px; /* Reduce padding */
     }
-    25% {
-        background-color: #a46f9d; /* Set background color */
+
+    .main-header h1 {
+        font-size: 32px; /* Adjust font size */
     }
-    50% {
-        background-color: #e0b0d5; /* Set background color */
+
+    .flashcard-container {
+        max-width: 100%; /* Take full width */
+        padding: 10px;
     }
-    75% {
-        background-color: #a46f9d; /* Set background color */
+
+    .resource-boxes {
+        flex-direction: column;
+        gap: 20px;
     }
-    100% {
-        background-color: #ffe2fc; /* Set background color */
+
+    .resource {
+        width: 100%; /* Take full width on mobile */
+    }
+
+    .section-nav ul {
+        flex-direction: column; /* Stack the navigation items */
+        gap: 10px;
+    }
+
+    .section h2 {
+        font-size: 24px;
+    }
+
+    .section p {
+        font-size: 16px;
     }
 }
-
-/* Apply the color shift animation to sections 1 and 2 */
-#section1,
-#section2 {
-    animation: colorShift 20s infinite alternate linear forwards; /* Adjust duration and timing function */
-}
-
-.footer {
-    display: flex;
-    justify-content: space-between;
-    background-color: #d4efdf; /* Light pastel green */
-    padding: 20px 40px;
-    align-items: center;
-    margin-top: 0px;
-}
-
-.footer p {
-    margin: 0;
-    color: #2f4f4f; /* Dark gray text for footer */
-    font-size: 14px;
-}
-

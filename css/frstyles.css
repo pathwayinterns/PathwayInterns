@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #eaf7f1; /* Soft pastel green */
@@ -8,11 +9,11 @@ body {
 }
 
 .logo {
-  display: block;
-  margin: 0;
-  padding: 0;
-  max-width: 50px;
-  height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+    max-width: 50px;
+    height: auto;
 }
 
 /* Navbar */
@@ -205,6 +206,14 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px; /* Reduced padding for smaller screens */
+    }
+
+    .main-header h1 {
+        font-size: 32px; /* Adjusted for smaller screens */
+    }
+
     .about-section {
         flex-direction: column;
         align-items: center;
@@ -214,8 +223,36 @@ body {
         width: 90%;
     }
 
+    .resources-section {
+        padding: 20px;
+    }
+
+    .resource-boxes {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .resource {
+        width: 100%;
+    }
+
     .nav-links {
         flex-direction: column;
         align-items: center;
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 16px; /* Smaller text for mobile */
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .footer p {
+        font-size: 12px; /* Smaller text for footer */
     }
 }

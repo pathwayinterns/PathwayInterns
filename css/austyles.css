@@ -5,6 +5,8 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    -webkit-font-smoothing: antialiased; /* Smooth text on webkit browsers */
+    -moz-osx-font-smoothing: grayscale; /* Smooth text on Firefox */
 }
 
 .logo {
@@ -45,8 +47,9 @@ body {
     transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
-    color: #358da1; /* Set the hover color to your desired color */
+.nav-links a:hover,
+.nav-links a:focus {
+    color: #358da1; /* Set the hover/focus color */
 }
 
 /* Dropdown Menu */
@@ -78,8 +81,9 @@ body {
     font-size: 16px;
 }
 
-.dropdown-menu a:hover {
-    color: #3b9a6a; /* Soft green for hover */
+.dropdown-menu a:hover,
+.dropdown-menu a:focus {
+    color: #3b9a6a; /* Soft green for hover/focus */
 }
 
 /* Main Header */
@@ -147,6 +151,25 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    /* Mobile Navigation */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .nav-links a {
+        font-size: 16px; /* Slightly smaller font size for mobile */
+    }
+
+    /* About Section */
     .about-section {
         flex-direction: column;
         align-items: center;
@@ -154,10 +177,59 @@ body {
 
     .about-box {
         width: 90%;
+        margin: 10px 0;
+    }
+
+    /* Adjust the main header */
+    .main-header h1 {
+        font-size: 36px; /* Resize the main header for smaller screens */
+    }
+}
+
+/* Mobile Menu Icon (Hamburger) */
+@media (max-width: 768px) {
+    .navbar {
+        position: relative;
     }
 
     .nav-links {
+        display: none; /* Hide links by default on mobile */
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
+
+    .navbar.active .nav-links {
+        display: flex; /* Show links when navbar is active */
+    }
+
+    .navbar-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar-toggle div {
+        width: 30px;
+        height: 3px;
+        background-color: #2f4f4f;
+        margin: 5px;
+        transition: 0.3s;
+    }
+}
+
+/* Toggle Hamburger Menu */
+.navbar-toggle.active div:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 8px;
+}
+
+.navbar-toggle.active div:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggle.active div:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -8px;
 }

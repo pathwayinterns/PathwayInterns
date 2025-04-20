@@ -23,7 +23,8 @@ body {
     justify-content: space-between;
     background-color: #d4efdf; /* Light pastel green */
     padding: 20px 40px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);    
+    flex-wrap: wrap; /* ADDED */
 }
 
 .nav-links {
@@ -138,7 +139,7 @@ body {
     display: block; /* Ensures the buttons are block elements, so they stack */
     margin: 20px auto; /* Centers the buttons and adds space between them */
     margin-bottom: 30px;
-    }
+}
 
 .cta-button:hover {
     background-color: #9de1d9; /* Darker green on hover */
@@ -196,7 +197,6 @@ body {
     font-size: 20px;
 }
 
-/* You may also want to change other text in the section */
 .resources-section {
     color: #6dbfbb; /* Set the default color for text within the resources-section */
 }
@@ -215,4 +215,46 @@ body {
     margin: 0;
     color: #2f4f4f; /* Dark gray text for footer */
     font-size: 14px;
+}
+
+/* ✅ Responsive Styling */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .main-header h1 {
+        font-size: 28px;
+    }
+
+    .cta-button {
+        font-size: 18px;
+        padding: 10px 20px;
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .resource-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+
+/* ✅ Prevent image overflow on small screens */
+img {
+    max-width: 100%;
+    height: auto;
 }

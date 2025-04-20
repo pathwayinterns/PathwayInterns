@@ -18,20 +18,16 @@ body {
 /* Navbar */
 .navbar {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Center everything */
+    justify-content: space-between;
+    align-items: center;
     background-color: #d4efdf;
     padding: 20px 40px;
-    gap: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     gap: 30px;
     margin: 0;
     padding: 0;
@@ -155,7 +151,7 @@ body {
 .resource-boxes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center guides */
+    justify-content: center;
     gap: 30px;
     margin-top: 20px;
 }

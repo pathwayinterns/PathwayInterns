@@ -1,36 +1,38 @@
 /* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #eaf7f1; /* Soft pastel green */
-    color: #333333; /* Dark gray for readability */
+    background-color: #eaf7f1;
+    color: #333333;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    text-align: center;
 }
 
 .logo {
     display: block;
-    margin: 0;
-    padding: 0;
-    max-width: 50px;
+    margin: 20px auto 10px auto;
+    max-width: 60px;
     height: auto;
 }
 
 /* Navbar */
 .navbar {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    background-color: #d4efdf; /* Light pastel green */
-    padding: 15px 20px; /* Adjusted padding for mobile */
+    background-color: #d4efdf;
+    padding: 15px 20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px; /* Reduced gap for mobile */
-    margin: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 10px 0 0 0;
     padding: 0;
 }
 
@@ -42,7 +44,7 @@ body {
     text-decoration: none;
     color: #2f4f4f;
     font-weight: 500;
-    font-size: 16px; /* Adjusted font size for mobile */
+    font-size: 16px;
     transition: color 0.3s ease;
 }
 
@@ -75,7 +77,7 @@ body {
 .dropdown-menu a {
     text-decoration: none;
     color: #2f4f4f;
-    font-size: 14px; /* Adjusted font size for mobile */
+    font-size: 14px;
 }
 
 .dropdown-menu a:hover {
@@ -84,39 +86,36 @@ body {
 
 /* Main Header */
 .main-header {
-    text-align: center;
-    padding: 40px 20px; /* Adjusted padding for clarity */
+    padding: 50px 20px 30px;
 }
 
 .main-header h1 {
-    font-size: 36px; /* Reduced font size for mobile */
+    font-size: 36px;
     color: #457c7e;
     margin-bottom: 10px;
 }
 
 .main-header p {
-    font-size: 20px; /* Reduced font size for mobile */
+    font-size: 20px;
     color: #509f97;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 700px; /* Adjusted max-width */
+    max-width: 700px;
+    margin: 0 auto;
     padding: 0 20px;
 }
 
 /* Submit Section */
 .submit-section {
-    text-align: center;
-    padding: 30px 20px; /* Adjusted padding */
+    padding: 30px 20px;
 }
 
 .google-form {
-    max-width: 100%; /* Full width for mobile */
+    max-width: 700px;
     margin: 0 auto;
 }
 
 .google-form iframe {
     width: 100%;
-    height: 500px; /* Reduced height for mobile */
+    height: 500px;
     border: none;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -124,12 +123,9 @@ body {
 
 /* Contact Info Section */
 .contact-info {
-    text-align: center;
     margin-top: 20px;
-    font-size: 14px; /* Reduced font size for mobile */
+    font-size: 14px;
     color: #2f4f4f;
-    width: 100%;
-    padding: 10px 0;
 }
 
 .contact-info a {
@@ -144,46 +140,40 @@ body {
 /* Footer */
 .footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #d4efdf;
-    padding: 15px 20px; /* Adjusted padding */
+    padding: 15px 20px;
     align-items: center;
 }
 
 .footer p {
     margin: 0;
     color: #2f4f4f;
-    font-size: 12px; /* Reduced font size for mobile */
+    font-size: 12px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-        padding: 15px;
-    }
-
     .nav-links {
         flex-direction: column;
-        gap: 10px; /* Reduced gap for mobile */
+        gap: 12px;
     }
 
     .main-header h1 {
-        font-size: 28px; /* Adjusted for mobile */
+        font-size: 28px;
     }
 
     .main-header p {
-        font-size: 18px; /* Adjusted font size */
+        font-size: 18px;
     }
 
     .google-form iframe {
-        height: 400px; /* Further reduced iframe height for mobile */
+        height: 400px;
     }
 
     .footer {
         flex-direction: column;
+        gap: 8px;
         text-align: center;
-        padding: 10px 20px; /* Adjusted padding */
     }
 }

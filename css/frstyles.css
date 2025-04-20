@@ -1,17 +1,16 @@
 /* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #eaf7f1; /* Soft pastel green */
-    color: #333333; /* Dark gray for readability */
+    background-color: #eaf7f1;
+    color: #333333;
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 
+/* Logo */
 .logo {
     display: block;
-    margin: 0;
-    padding: 0;
     max-width: 50px;
     height: auto;
 }
@@ -19,16 +18,20 @@ body {
 /* Navbar */
 .navbar {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #d4efdf; /* Light pastel green */
+    flex-wrap: wrap;
+    justify-content: center; /* Center everything */
+    background-color: #d4efdf;
     padding: 20px 40px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .nav-links {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
     margin: 0;
     padding: 0;
@@ -40,19 +43,19 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #2f4f4f; /* Default color of the navbar links */
+    color: #2f4f4f;
     font-weight: 500;
     font-size: 18px;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #358da1; /* Set the hover color to your desired color */
+    color: #358da1;
 }
 
 /* Dropdown Menu */
 .dropdown-menu {
-    display: none; /* Hide by default */
+    display: none;
     position: absolute;
     background-color: #b9ddcd;
     list-style: none;
@@ -60,10 +63,10 @@ body {
     border-radius: 5px;
     top: 100%;
     left: 0;
-    margin: 0; /* Remove any margin */
+    margin: 0;
+    z-index: 10;
 }
 
-/* Show dropdown on hover */
 .dropdown:hover .dropdown-menu {
     display: block;
 }
@@ -80,19 +83,19 @@ body {
 }
 
 .dropdown-menu a:hover {
-    color: #3b9a6a; /* Soft green for hover */
+    color: #3b9a6a;
 }
 
 /* Main Header */
 .main-header {
     text-align: center;
-    padding: 30px 20px;
+    padding: 40px 20px 20px;
 }
 
 .main-header h1 {
     font-size: 48px;
     color: #427b6b;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 /* About Us Section */
@@ -109,49 +112,61 @@ body {
     background-color: white;
     padding: 25px;
     border-radius: 15px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 280px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-top: -50px;
 }
 
 .about-box h2 {
-    color: #509f97; /* Title color */
+    color: #509f97;
     font-size: 22px;
 }
 
 .about-box p {
-    color: #3d776d; /* Paragraph text color */
+    color: #3d776d;
     font-size: 16px;
 }
 
 .about-box:hover {
     transform: translateY(-5px);
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Resources Section */
 .resources-section {
     font-family: 'Poppins', sans-serif !important;
     text-align: center;
-    padding: 0px 20px;
-    margin-top: -10px;
+    padding: 40px 20px;
+}
+
+.resources-section h2 {
+    color: #509f97;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.resources-section p {
+    color: #3d776d;
+    font-size: 20px;
+    margin-bottom: 30px;
 }
 
 .resource-boxes {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center; /* Center guides */
     gap: 30px;
-    margin-top: 70px;
+    margin-top: 20px;
 }
 
 .resource {
     background-color: white;
     padding: 25px;
     border-radius: 15px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    width: 280px; /* Added width for consistency */
-    margin-bottom: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .resource img {
@@ -161,79 +176,39 @@ body {
 
 .resource a {
     text-decoration: none;
-    color: #6dbfbb; /* Matching soft green */
+    color: #6dbfbb;
     font-size: 16px;
     font-weight: 500;
 }
 
 .resource:hover {
-    transform: translateY(-5px); /* Moves the resource up by 5px */
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); /* Adds a shadow to enhance the lifting effect */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
-}
-
-/* Featured Resources Section Text Color */
-.resources-section h2 {
-    color: #509f97; /* Set the color of the heading */
-    font-size: 30px;
-}
-
-.resources-section p {
-    color: #3d776d; /* Set the color of the paragraphs */
-    font-size: 20px;
-}
-
-/* You may also want to change other text in the section */
-.resources-section {
-    color: #6dbfbb; /* Set the default color for text within the resources-section */
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
 .footer {
     display: flex;
-    justify-content: space-between;
-    background-color: #d4efdf; /* Light pastel green */
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #d4efdf;
     padding: 20px 40px;
-    align-items: center;
-    margin-top: 0px;
+    text-align: center;
+    gap: 15px;
 }
 
 .footer p {
     margin: 0;
-    color: #2f4f4f; /* Dark gray text for footer */
+    color: #2f4f4f;
     font-size: 14px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .navbar {
-        padding: 15px 20px; /* Reduced padding for smaller screens */
-    }
-
-    .main-header h1 {
-        font-size: 32px; /* Adjusted for smaller screens */
-    }
-
-    .about-section {
         flex-direction: column;
-        align-items: center;
-    }
-
-    .about-box {
-        width: 90%;
-    }
-
-    .resources-section {
-        padding: 20px;
-    }
-
-    .resource-boxes {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .resource {
-        width: 100%;
+        padding: 15px 20px;
+        gap: 15px;
     }
 
     .nav-links {
@@ -243,16 +218,36 @@ body {
     }
 
     .nav-links a {
-        font-size: 16px; /* Smaller text for mobile */
+        font-size: 16px;
+    }
+
+    .main-header h1 {
+        font-size: 32px;
+    }
+
+    .about-section {
+        flex-direction: column;
+    }
+
+    .about-box {
+        width: 90%;
+    }
+
+    .resource-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resource {
+        width: 90%;
     }
 
     .footer {
         flex-direction: column;
-        text-align: center;
-        gap: 15px;
+        gap: 10px;
     }
 
     .footer p {
-        font-size: 12px; /* Smaller text for footer */
+        font-size: 12px;
     }
 }

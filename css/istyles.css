@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #eaf7f1; /* Soft pastel green */
@@ -93,6 +92,7 @@ body {
     font-family: 'Poppins', sans-serif !important;
     font-size: 48px; /* Larger size for impact */
     color: #5cab95;
+    font-family: 'Roboto', sans-serif; /* Clean and modern font */
     margin-bottom: 20px;
     margin-top:-10px;
 }
@@ -255,6 +255,11 @@ button {
     right: 10px;
 }
 
+/* Show the first flashcard */
+.flashcard:first-child {
+    display: block;
+}
+
 /* Resources Section */
 .resources-section {
     font-family: 'Poppins', sans-serif !important;
@@ -371,16 +376,6 @@ button {
     text-align: center; /* Ensure all content text is centered */
 }
 
-/* Styles for content and images */
-.content,
-.image {
-    flex-basis: 50%; /* Set flex basis */
-    padding: 0 20px; /* Set padding */
-    opacity: 0; /* Hide content */
-    transform: translateY(50px); /* Move content down */
-    transition: opacity 0.4s ease, transform 0.4s ease; /* Add transition effect */
-}
-
 /* Styles for images */
 .image img {
     max-width: 100%; /* Set max width */
@@ -410,40 +405,30 @@ button {
     line-height: 1.5; /* Set line height */
 }
 
-/* Media Queries for Small Screens */
-@media (max-width: 768px) {
-    .navbar {
-        padding: 10px 20px; /* Reduce padding */
-    }
-
-    .main-header h1 {
-        font-size: 32px; /* Adjust font size */
-    }
-
-    .flashcard-container {
-        max-width: 100%; /* Take full width */
-        padding: 10px;
-    }
-
-    .resource-boxes {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .resource {
-        width: 100%; /* Take full width on mobile */
-    }
-
-    .section-nav ul {
-        flex-direction: column; /* Stack the navigation items */
-        gap: 10px;
-    }
-
-    .section h2 {
-        font-size: 24px;
-    }
-
-    .section p {
-        font-size: 16px;
-    }
+/* Scroll animations */
+.section:hover .content,
+.section:hover .image {
+    opacity: 1; /* Show content on hover */
+    transform: translateY(0); /* Move content up */
 }
+
+/* Adjust scroll margin top */
+.section {
+    scroll-margin-top: 60px; /* Adjust this value to match the height of the navigation bar */
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #d4efdf; /* Light pastel green */
+    padding: 20px 40px;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.footer p {
+    margin: 0;
+    color: #2f4f4f; /* Dark gray text for footer */
+    font-size: 14px;
+}
+

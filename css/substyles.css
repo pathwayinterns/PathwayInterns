@@ -19,7 +19,7 @@ body {
 /* Navbar */
 .navbar {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between; /* Spread out items */
     align-items: center;
     background-color: #d4efdf;
     padding: 20px;
@@ -30,10 +30,8 @@ body {
     list-style: none;
     display: flex;
     gap: 30px;
-    margin: 15px 0 0 0;
+    margin: 0;
     padding: 0;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .nav-links li {
@@ -163,7 +161,8 @@ body {
     }
 
     .nav-links {
-        flex-direction: column;
+        flex-direction: row; /* Keep nav items horizontal on mobile */
+        justify-content: center;
         gap: 15px;
     }
 

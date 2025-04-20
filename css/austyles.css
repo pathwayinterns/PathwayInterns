@@ -5,8 +5,6 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    -webkit-font-smoothing: antialiased; /* Smooth text on webkit browsers */
-    -moz-osx-font-smoothing: grayscale; /* Smooth text on Firefox */
 }
 
 .logo {
@@ -24,7 +22,8 @@ body {
     justify-content: space-between;
     background-color: #d4efdf; /* Light pastel green */
     padding: 20px 40px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);    
+    flex-wrap: wrap; /* ADDED */
 }
 
 .nav-links {
@@ -47,9 +46,8 @@ body {
     transition: color 0.3s ease;
 }
 
-.nav-links a:hover,
-.nav-links a:focus {
-    color: #358da1; /* Set the hover/focus color */
+.nav-links a:hover {
+    color: #358da1; /* Set the hover color to your desired color */
 }
 
 /* Dropdown Menu */
@@ -81,21 +79,22 @@ body {
     font-size: 16px;
 }
 
-.dropdown-menu a:hover,
-.dropdown-menu a:focus {
-    color: #3b9a6a; /* Soft green for hover/focus */
+.dropdown-menu a:hover {
+    color: #3b9a6a; /* Soft green for hover */
 }
 
 /* Main Header */
 .main-header {
     text-align: center;
-    padding: 30px 20px;
+    padding: 50px 20px; /* More space for emphasis */
 }
 
 .main-header h1 {
-    font-size: 48px;
-    color: #427b6b;
-    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 48px; /* Larger size for impact */
+    color: #5cab95;
+    font-family: 'Roboto', sans-serif; /* Clean and modern font */
+    margin-bottom: 0px;
 }
 
 /* About Us Section */
